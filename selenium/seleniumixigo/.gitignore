@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# Logs and screenshots
+logs/
+reports/
+
+# IDE
+.idea/
+.vscode/
+*.code-workspace
+
+# Virtual environment
+venv/
+.env/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Backups
+*.bak

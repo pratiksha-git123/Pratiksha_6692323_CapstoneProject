@@ -1,0 +1,4 @@
+from_city,from_code,to_city,to_code,travel_date
+Mumbai,BOM,Bengaluru,BLR,2026-06-10
+Delhi,DEL,Mumbai,BOM,2026-06-15
+Mumbai,BOM,Delhi,DEL,2026-06-20
