@@ -1,0 +1,5 @@
+title,first_name,last_name,nationality,country_code,mobile,email,pincode,address
+Mr,Rahul Kumar,Sharma,India,India (+91),9876543210,rahul.sharma@example.com,560001,42 MG Road Bengaluru
+Ms,Priya,Patel,India,India (+91),8765432109,priya.patel@example.com,110001,15 Connaught Place New Delhi
+Mr,Amit,Verma,India,India (+91),7654321098,amit.verma@example.com,400001,78 Marine Drive Mumbai
+Mr,Invalid,User,India,India (+91),12345,invalid-email,560001,42 MG Road Bengaluru

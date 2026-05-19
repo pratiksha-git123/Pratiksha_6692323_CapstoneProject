@@ -1,0 +1,4 @@
+from_city,from_code,to_city,to_code,travel_date,filter,sort
+Mumbai,BOM,Bengaluru,BLR,2026-06-04,Non-Stop,Price
+Delhi,DEL,Mumbai,BOM,2026-06-10,Non-Stop,Price
+Chennai,MAA,Kolkata,CCU,2026-06-15,Non-Stop,Price

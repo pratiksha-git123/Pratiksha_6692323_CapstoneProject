@@ -1,0 +1,1195 @@
+2026-05-21 01:17:46,339 [INFO] BDD suite started.
+2026-05-21 01:17:46,341 [INFO] Starting feature: Ixigo combined flow
+2026-05-21 01:17:47,686 [INFO] Opening https://www.ixigo.com/flights
+2026-05-21 01:17:56,790 [INFO] Sale banner closed.
+2026-05-21 01:17:56,915 [INFO] Starting scenario: Same source and destination should not navigate to results
+2026-05-21 01:17:58,050 [INFO] Opening https://www.ixigo.com/flights
+2026-05-21 01:18:07,147 [INFO] Sale banner closed.
+2026-05-21 01:18:07,244 [INFO] Opening https://www.ixigo.com/flights
+2026-05-21 01:18:14,997 [INFO] Sale banner closed.
+2026-05-21 01:18:15,073 [INFO] Waiting for search form to be interactive...
+2026-05-21 01:18:15,174 [INFO] Search form is ready.
+2026-05-21 01:18:15,175 [INFO] Selecting From: Mumbai (BOM)
+2026-05-21 01:18:21,141 [INFO] Selected BOM from dropdown.
+2026-05-21 01:18:21,141 [INFO] Selecting To: Mumbai (BOM)
+2026-05-21 01:18:27,289 [INFO] Selected BOM from dropdown.
+2026-05-21 01:18:27,291 [INFO] Selecting date: 4 June 2026
+2026-05-21 01:18:35,297 [INFO] Selected date (abbr fallback): June 4, 2026
+2026-05-21 01:18:35,299 [INFO] Clicking Search...
+2026-05-21 01:18:42,455 [INFO] Sale banner closed.
+2026-05-21 01:18:42,758 [INFO] Search clicked.
+2026-05-21 01:18:46,710 [INFO] BDD scenario screenshot saved: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\utils\..\logs\Same_source_and_destination_should_not_navigate_to_results_passed_20260521_011846.png
+2026-05-21 01:18:46,711 [INFO] Closing isolated browser after scenario: Same source and destination should not navigate to results
+2026-05-21 01:18:49,215 [INFO] Starting scenario: Search without destination should not navigate to results
+2026-05-21 01:18:50,315 [INFO] Opening https://www.ixigo.com/flights
+2026-05-21 01:18:59,275 [INFO] Sale banner closed.
+2026-05-21 01:18:59,388 [INFO] Opening https://www.ixigo.com/flights
+2026-05-21 01:19:07,067 [INFO] Sale banner closed.
+2026-05-21 01:19:07,135 [INFO] Waiting for search form to be interactive...
+2026-05-21 01:19:07,197 [INFO] Search form is ready.
+2026-05-21 01:19:07,199 [INFO] Selecting From: Mumbai (BOM)
+2026-05-21 01:19:13,140 [INFO] Selected BOM from dropdown.
+2026-05-21 01:19:13,140 [INFO] Clicking Search...
+2026-05-21 01:19:20,323 [INFO] Sale banner closed.
+2026-05-21 01:19:20,666 [INFO] Search clicked.
+2026-05-21 01:19:25,100 [INFO] BDD scenario screenshot saved: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\utils\..\logs\Search_without_destination_should_not_navigate_to_results_passed_20260521_011924.png
+2026-05-21 01:19:25,101 [INFO] Closing isolated browser after scenario: Search without destination should not navigate to results
+2026-05-21 01:19:27,603 [INFO] Closing browser after feature: Ixigo combined flow
+2026-05-21 01:19:30,383 [INFO] BDD suite finished.
+2026-05-21 01:19:30,403 [INFO] Allure report will open shortly. Logs: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\reports\allure-command-*.log
+2026-05-21 23:56:01,698 [INFO] BDD suite started.
+2026-05-21 23:56:01,702 [INFO] Starting feature: Ixigo combined flow
+2026-05-21 23:56:04,696 [INFO] BDD suite finished.
+2026-05-21 23:56:04,723 [INFO] Allure report will open shortly. Logs: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\reports\allure-command-*.log
+2026-05-21 23:58:52,940 [INFO] BDD suite started.
+2026-05-21 23:58:52,942 [INFO] Starting feature: Ixigo combined flow
+2026-05-21 23:58:53,779 [INFO] BDD suite finished.
+2026-05-21 23:58:53,779 [INFO] Allure report will open shortly. Logs: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\reports\allure-command-*.log
+2026-05-21 23:59:49,854 [INFO] BDD suite started.
+2026-05-21 23:59:49,855 [INFO] Starting feature: Ixigo combined flow
+2026-05-21 23:59:50,676 [INFO] BDD suite finished.
+2026-05-21 23:59:50,677 [INFO] Allure report will open shortly. Logs: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\reports\allure-command-*.log
+2026-05-22 00:02:09,991 [INFO] Browser started: MicrosoftEdge
+2026-05-22 00:02:37,948 [INFO] BDD suite started.
+2026-05-22 00:02:37,951 [INFO] Starting feature: Ixigo combined flow
+2026-05-22 00:02:38,949 [INFO] Browser started: MicrosoftEdge
+2026-05-22 00:02:38,950 [INFO] Opening https://www.ixigo.com/flights
+2026-05-22 00:02:47,850 [INFO] Sale banner closed.
+2026-05-22 00:02:47,925 [INFO] Starting scenario: Same source and destination should not navigate to results
+2026-05-22 00:02:48,859 [INFO] Browser started: MicrosoftEdge
+2026-05-22 00:02:48,859 [INFO] Opening https://www.ixigo.com/flights
+2026-05-22 00:02:57,756 [INFO] Sale banner closed.
+2026-05-22 00:02:57,889 [INFO] Opening https://www.ixigo.com/flights
+2026-05-22 00:03:05,545 [INFO] Sale banner closed.
+2026-05-22 00:03:05,601 [INFO] Waiting for search form to be interactive...
+2026-05-22 00:03:05,687 [INFO] Search form is ready.
+2026-05-22 00:03:05,687 [INFO] Selecting From: Mumbai (BOM)
+2026-05-22 00:03:11,307 [INFO] Selected BOM from dropdown.
+2026-05-22 00:03:11,309 [INFO] Selecting To: Mumbai (BOM)
+2026-05-22 00:03:16,944 [INFO] Selected BOM from dropdown.
+2026-05-22 00:03:16,944 [INFO] Selecting date: 4 June 2026
+2026-05-22 00:03:24,577 [INFO] Selected date (abbr fallback): June 4, 2026
+2026-05-22 00:03:24,577 [INFO] Clicking Search...
+2026-05-22 00:03:31,686 [INFO] Sale banner closed.
+2026-05-22 00:03:31,870 [INFO] Search clicked.
+2026-05-22 00:03:35,695 [INFO] BDD scenario screenshot saved: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\utils\..\logs\Same_source_and_destination_should_not_navigate_to_results_passed_20260522_000335.png
+2026-05-22 00:03:35,695 [INFO] Closing isolated browser after scenario: Same source and destination should not navigate to results
+2026-05-22 00:03:38,062 [INFO] Starting scenario: Search without destination should not navigate to results
+2026-05-22 00:03:39,082 [INFO] Browser started: MicrosoftEdge
+2026-05-22 00:03:39,082 [INFO] Opening https://www.ixigo.com/flights
+2026-05-22 00:03:47,996 [INFO] Sale banner closed.
+2026-05-22 00:03:48,065 [INFO] Opening https://www.ixigo.com/flights
+2026-05-22 00:03:55,794 [INFO] Sale banner closed.
+2026-05-22 00:03:55,845 [INFO] Waiting for search form to be interactive...
+2026-05-22 00:03:55,901 [INFO] Search form is ready.
+2026-05-22 00:03:55,901 [INFO] Selecting From: Mumbai (BOM)
+2026-05-22 00:04:02,081 [INFO] Selected BOM from dropdown.
+2026-05-22 00:04:02,082 [INFO] Clicking Search...
+2026-05-22 00:04:09,176 [INFO] Sale banner closed.
+2026-05-22 00:04:09,358 [INFO] Search clicked.
+2026-05-22 00:04:13,755 [INFO] BDD scenario screenshot saved: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\utils\..\logs\Search_without_destination_should_not_navigate_to_results_passed_20260522_000413.png
+2026-05-22 00:04:13,755 [INFO] Closing isolated browser after scenario: Search without destination should not navigate to results
+2026-05-22 00:04:16,139 [INFO] Closing browser after feature: Ixigo combined flow
+2026-05-22 00:04:18,508 [INFO] BDD suite finished.
+2026-05-22 00:04:18,508 [INFO] Allure report will open shortly. Logs: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\reports\allure-command-*.log
+2026-05-22 00:04:42,402 [INFO] BDD suite started.
+2026-05-22 00:04:42,408 [INFO] Starting feature: Ixigo combined flow
+2026-05-22 00:04:43,601 [INFO] Browser started: MicrosoftEdge
+2026-05-22 00:04:43,601 [INFO] Opening https://www.ixigo.com/flights
+2026-05-22 00:04:53,093 [INFO] Closing browser after feature: Ixigo combined flow
+2026-05-22 00:04:55,432 [INFO] BDD suite finished.
+2026-05-22 00:04:55,433 [INFO] Allure report will open shortly. Logs: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\reports\allure-command-*.log
+2026-05-22 00:05:49,469 [INFO] BDD suite started.
+2026-05-22 00:05:49,473 [INFO] Starting feature: Ixigo combined flow
+2026-05-22 00:05:50,629 [INFO] Browser started: MicrosoftEdge
+2026-05-22 00:05:50,630 [INFO] Opening https://www.ixigo.com/flights
+2026-05-22 00:05:58,465 [INFO] Sale banner closed.
+2026-05-22 00:05:58,586 [INFO] Starting scenario: Same source and destination should not navigate to results
+2026-05-22 00:05:59,661 [INFO] Browser started: MicrosoftEdge
+2026-05-22 00:05:59,661 [INFO] Opening https://www.ixigo.com/flights
+2026-05-22 00:06:07,539 [INFO] Sale banner closed.
+2026-05-22 00:06:07,700 [INFO] Opening https://www.ixigo.com/flights
+2026-05-22 00:06:15,626 [INFO] Sale banner closed.
+2026-05-22 00:06:15,776 [INFO] Waiting for search form to be interactive...
+2026-05-22 00:06:15,925 [INFO] Search form is ready.
+2026-05-22 00:06:15,926 [INFO] Selecting From: Mumbai (BOM)
+2026-05-22 00:06:21,872 [INFO] Selected BOM from dropdown.
+2026-05-22 00:06:21,872 [INFO] Selecting To: Mumbai (BOM)
+2026-05-22 00:06:27,469 [INFO] Selected BOM from dropdown.
+2026-05-22 00:06:27,469 [INFO] Selecting date: 4 June 2026
+2026-05-22 00:06:35,347 [INFO] Selected date (abbr fallback): June 4, 2026
+2026-05-22 00:06:35,347 [INFO] Clicking Search...
+2026-05-22 00:06:42,494 [INFO] Sale banner closed.
+2026-05-22 00:06:42,758 [INFO] Search clicked.
+2026-05-22 00:06:46,816 [INFO] BDD scenario screenshot saved: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\utils\..\logs\Same_source_and_destination_should_not_navigate_to_results_passed_20260522_000646.png
+2026-05-22 00:06:46,816 [INFO] Closing isolated browser after scenario: Same source and destination should not navigate to results
+2026-05-22 00:06:49,216 [INFO] Starting scenario: Search without destination should not navigate to results
+2026-05-22 00:06:50,653 [INFO] Browser started: MicrosoftEdge
+2026-05-22 00:06:50,655 [INFO] Opening https://www.ixigo.com/flights
+2026-05-22 00:06:58,453 [INFO] Sale banner closed.
+2026-05-22 00:06:58,508 [INFO] Opening https://www.ixigo.com/flights
+2026-05-22 00:07:06,225 [INFO] Sale banner closed.
+2026-05-22 00:07:06,288 [INFO] Waiting for search form to be interactive...
+2026-05-22 00:07:06,334 [INFO] Search form is ready.
+2026-05-22 00:07:06,334 [INFO] Selecting From: Mumbai (BOM)
+2026-05-22 00:07:12,465 [INFO] Selected BOM from dropdown.
+2026-05-22 00:07:12,465 [INFO] Clicking Search...
+2026-05-22 00:07:19,555 [INFO] Sale banner closed.
+2026-05-22 00:07:19,713 [INFO] Search clicked.
+2026-05-22 00:07:24,058 [INFO] BDD scenario screenshot saved: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\utils\..\logs\Search_without_destination_should_not_navigate_to_results_passed_20260522_000723.png
+2026-05-22 00:07:24,058 [INFO] Closing isolated browser after scenario: Search without destination should not navigate to results
+2026-05-22 00:07:26,393 [INFO] Closing browser after feature: Ixigo combined flow
+2026-05-22 00:07:29,172 [INFO] BDD suite finished.
+2026-05-22 00:07:29,174 [INFO] Allure report will open shortly. Logs: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\reports\allure-command-*.log
+2026-05-22 00:07:50,841 [INFO] BDD suite started.
+2026-05-22 00:07:50,843 [INFO] Starting feature: Ixigo combined flow
+2026-05-22 00:07:52,025 [INFO] Browser started: MicrosoftEdge
+2026-05-22 00:07:52,025 [INFO] Opening https://www.ixigo.com/flights
+2026-05-22 00:07:59,862 [INFO] Sale banner closed.
+2026-05-22 00:07:59,917 [INFO] Starting scenario: Open ixigo page
+2026-05-22 00:07:59,918 [INFO] Opening https://www.ixigo.com/flights
+2026-05-22 00:08:07,502 [INFO] Sale banner closed.
+2026-05-22 00:08:07,853 [INFO] BDD scenario screenshot saved: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\utils\..\logs\Open_ixigo_page_passed_20260522_000807.png
+2026-05-22 00:08:07,889 [INFO] Starting scenario: Page elements are present
+2026-05-22 00:08:08,239 [INFO] BDD scenario screenshot saved: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\utils\..\logs\Page_elements_are_present_passed_20260522_000807.png
+2026-05-22 00:08:08,241 [INFO] Starting scenario: Search BOM to BLR flights
+2026-05-22 00:08:08,242 [INFO] Opening https://www.ixigo.com/flights
+2026-05-22 00:08:15,743 [INFO] Sale banner closed.
+2026-05-22 00:08:15,813 [INFO] Waiting for search form to be interactive...
+2026-05-22 00:08:15,874 [INFO] Search form is ready.
+2026-05-22 00:08:15,875 [INFO] Selecting From: Mumbai (BOM)
+2026-05-22 00:08:21,727 [INFO] Selected BOM from dropdown.
+2026-05-22 00:08:21,728 [INFO] Selecting To: Bengaluru (BLR)
+2026-05-22 00:08:27,648 [INFO] Selected BLR from dropdown.
+2026-05-22 00:08:27,649 [INFO] Selecting date: 10 June 2026
+2026-05-22 00:08:28,306 [INFO] Selected date: June 10, 2026
+2026-05-22 00:08:28,307 [INFO] Clicking Search...
+2026-05-22 00:08:35,400 [INFO] Sale banner closed.
+2026-05-22 00:08:35,544 [INFO] Search clicked.
+2026-05-22 00:08:38,908 [INFO] Waiting for flight results...
+2026-05-22 00:08:39,015 [INFO] Results loaded.
+2026-05-22 00:08:39,015 [INFO] Dismissing results-page popup...
+2026-05-22 00:08:39,892 [INFO] BDD scenario screenshot saved: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\utils\..\logs\Search_BOM_to_BLR_flights_passed_20260522_000839.png
+2026-05-22 00:08:39,894 [INFO] Starting scenario: Flight count and book buttons are visible
+2026-05-22 00:08:40,392 [INFO] BDD scenario screenshot saved: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\utils\..\logs\Flight_count_and_book_buttons_are_visible_passed_20260522_000840.png
+2026-05-22 00:08:40,396 [INFO] Starting scenario: Apply nonstop filter and sort by price
+2026-05-22 00:08:40,397 [INFO] Applying Non-Stop filter...
+2026-05-22 00:08:44,007 [INFO] Non-Stop filter applied.
+2026-05-22 00:08:44,382 [INFO] Sorting by Price (Low to High)...
+2026-05-22 00:08:44,443 [INFO] Sorted by Price.
+2026-05-22 00:08:44,477 [INFO] Dismissing results-page popup...
+2026-05-22 00:08:45,632 [INFO] BDD scenario screenshot saved: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\utils\..\logs\Apply_nonstop_filter_and_sort_by_price_passed_20260522_000845.png
+2026-05-22 00:08:45,635 [INFO] Starting scenario: Print flight results
+2026-05-22 00:08:45,636 [INFO] ============================================================
+2026-05-22 00:08:46,905 [INFO] 37 Flights Available
+2026-05-22 00:08:47,075 [INFO] 
+--- Flight 1 ---
+2026-05-22 00:08:47,075 [INFO]   ₹5,058
+2026-05-22 00:08:47,075 [INFO]   Extra ₹600 Off
+2026-05-22 00:08:47,075 [INFO]   Book
+2026-05-22 00:08:47,075 [INFO] 
+--- Flight 2 ---
+2026-05-22 00:08:47,076 [INFO]   Cheapest
+2026-05-22 00:08:47,076 [INFO]   Akasa Air
+2026-05-22 00:08:47,076 [INFO]   QP2001
+2026-05-22 00:08:47,076 [INFO]   07:15
+2026-05-22 00:08:47,076 [INFO]   NMI
+2026-05-22 00:08:47,076 [INFO]   1h 45m
+2026-05-22 00:08:47,076 [INFO]   Non-stop
+2026-05-22 00:08:47,076 [INFO]   09:00
+2026-05-22 00:08:47,076 [INFO] 
+--- Flight 3 ---
+2026-05-22 00:08:47,076 [INFO]   ₹5,308
+2026-05-22 00:08:47,076 [INFO]   Extra ₹505 Off
+2026-05-22 00:08:47,078 [INFO]   Book
+2026-05-22 00:08:47,078 [INFO] 
+--- Flight 4 ---
+2026-05-22 00:08:47,078 [INFO]   Akasa Air
+2026-05-22 00:08:47,078 [INFO]   QP1985
+2026-05-22 00:08:47,078 [INFO]   23:20
+2026-05-22 00:08:47,078 [INFO]   BOM
+2026-05-22 00:08:47,078 [INFO]   1h 50m
+2026-05-22 00:08:47,078 [INFO]   Non-stop
+2026-05-22 00:08:47,079 [INFO]   01:10
+2026-05-22 00:08:47,079 [INFO]   +1
+2026-05-22 00:08:47,079 [INFO] 
+--- Flight 5 ---
+2026-05-22 00:08:47,079 [INFO]   ₹5,308
+2026-05-22 00:08:47,079 [INFO]   Extra ₹445 Off
+2026-05-22 00:08:47,080 [INFO]   Book
+2026-05-22 00:08:47,080 [INFO] ============================================================
+2026-05-22 00:08:47,506 [INFO] BDD scenario screenshot saved: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\utils\..\logs\Print_flight_results_passed_20260522_000847.png
+2026-05-22 00:08:47,509 [INFO] Starting scenario: Same source and destination should not navigate to results
+2026-05-22 00:08:48,369 [INFO] Browser started: MicrosoftEdge
+2026-05-22 00:08:48,370 [INFO] Opening https://www.ixigo.com/flights
+2026-05-22 00:08:56,266 [INFO] Sale banner closed.
+2026-05-22 00:08:56,364 [INFO] Opening https://www.ixigo.com/flights
+2026-05-22 00:09:04,176 [INFO] Sale banner closed.
+2026-05-22 00:09:04,230 [INFO] Waiting for search form to be interactive...
+2026-05-22 00:09:04,277 [INFO] Search form is ready.
+2026-05-22 00:09:04,277 [INFO] Selecting From: Mumbai (BOM)
+2026-05-22 00:09:09,956 [INFO] Selected BOM from dropdown.
+2026-05-22 00:09:09,956 [INFO] Selecting To: Mumbai (BOM)
+2026-05-22 00:09:15,613 [INFO] Selected BOM from dropdown.
+2026-05-22 00:09:15,613 [INFO] Selecting date: 4 June 2026
+2026-05-22 00:09:23,289 [INFO] Selected date (abbr fallback): June 4, 2026
+2026-05-22 00:09:23,289 [INFO] Clicking Search...
+2026-05-22 00:09:30,412 [INFO] Sale banner closed.
+2026-05-22 00:09:30,615 [INFO] Search clicked.
+2026-05-22 00:09:34,580 [INFO] BDD scenario screenshot saved: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\utils\..\logs\Same_source_and_destination_should_not_navigate_to_results_passed_20260522_000934.png
+2026-05-22 00:09:34,582 [INFO] Closing isolated browser after scenario: Same source and destination should not navigate to results
+2026-05-22 00:09:36,976 [INFO] Starting scenario: Search without destination should not navigate to results
+2026-05-22 00:09:37,891 [INFO] Browser started: MicrosoftEdge
+2026-05-22 00:09:37,892 [INFO] Opening https://www.ixigo.com/flights
+2026-05-22 00:09:45,745 [INFO] Sale banner closed.
+2026-05-22 00:09:45,806 [INFO] Opening https://www.ixigo.com/flights
+2026-05-22 00:09:53,467 [INFO] Sale banner closed.
+2026-05-22 00:09:53,538 [INFO] Waiting for search form to be interactive...
+2026-05-22 00:09:53,604 [INFO] Search form is ready.
+2026-05-22 00:09:53,605 [INFO] Selecting From: Mumbai (BOM)
+2026-05-22 00:09:59,268 [INFO] Selected BOM from dropdown.
+2026-05-22 00:09:59,268 [INFO] Clicking Search...
+2026-05-22 00:10:06,357 [INFO] Sale banner closed.
+2026-05-22 00:10:06,574 [INFO] Search clicked.
+2026-05-22 00:10:10,934 [INFO] BDD scenario screenshot saved: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\utils\..\logs\Search_without_destination_should_not_navigate_to_results_passed_20260522_001010.png
+2026-05-22 00:10:10,934 [INFO] Closing isolated browser after scenario: Search without destination should not navigate to results
+2026-05-22 00:10:13,425 [INFO] Starting scenario: Booking flow reaches traveller details
+2026-05-22 00:10:14,423 [INFO] Browser started: MicrosoftEdge
+2026-05-22 00:10:14,424 [INFO] Opening https://www.ixigo.com/flights
+2026-05-22 00:10:22,345 [INFO] Sale banner closed.
+2026-05-22 00:10:22,410 [INFO] Opening https://www.ixigo.com/flights
+2026-05-22 00:10:30,141 [INFO] Sale banner closed.
+2026-05-22 00:10:30,216 [INFO] Waiting for search form to be interactive...
+2026-05-22 00:10:30,261 [INFO] Search form is ready.
+2026-05-22 00:10:30,261 [INFO] Selecting From: Mumbai (BOM)
+2026-05-22 00:10:36,007 [INFO] Selected BOM from dropdown.
+2026-05-22 00:10:36,007 [INFO] Selecting To: Bengaluru (BLR)
+2026-05-22 00:10:41,645 [INFO] Selected BLR from dropdown.
+2026-05-22 00:10:41,646 [INFO] Selecting date: 4 June 2026
+2026-05-22 00:10:49,258 [INFO] Selected date (abbr fallback): June 4, 2026
+2026-05-22 00:10:49,258 [INFO] Clicking Search...
+2026-05-22 00:10:56,382 [INFO] Sale banner closed.
+2026-05-22 00:10:56,596 [INFO] Search clicked.
+2026-05-22 00:11:00,095 [INFO] Waiting for flight results...
+2026-05-22 00:11:00,196 [INFO] Results loaded.
+2026-05-22 00:11:00,196 [INFO] Dismissing results-page popup...
+2026-05-22 00:11:00,573 [INFO] Applying Non-Stop filter...
+2026-05-22 00:11:02,397 [INFO] Non-Stop filter applied.
+2026-05-22 00:11:02,927 [INFO] Sorting by Price (Low to High)...
+2026-05-22 00:11:02,987 [INFO] Sorted by Price.
+2026-05-22 00:11:03,022 [INFO] Dismissing results-page popup...
+2026-05-22 00:11:03,976 [INFO] Clicking Book on flight #1...
+2026-05-22 00:11:04,216 [INFO] Book clicked — proceeding to traveller details.
+2026-05-22 00:11:05,096 [INFO] Waiting for booking/traveller details page...
+2026-05-22 00:11:05,205 [INFO] Booking page loaded.
+2026-05-22 00:11:05,349 [INFO] Selecting 'I don't want Free Cancellation'...
+2026-05-22 00:11:12,832 [INFO] Declined Free Cancellation.
+2026-05-22 00:11:13,132 [INFO] Waiting for booking/traveller details page...
+2026-05-22 00:11:13,139 [INFO] Booking page loaded.
+2026-05-22 00:11:13,524 [INFO] BDD scenario screenshot saved: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\utils\..\logs\Booking_flow_reaches_traveller_details_passed_20260522_001113.png
+2026-05-22 00:11:13,524 [INFO] Closing isolated browser after scenario: Booking flow reaches traveller details
+2026-05-22 00:11:15,991 [INFO] Closing browser after feature: Ixigo combined flow
+2026-05-22 00:11:18,318 [INFO] Starting feature: Ixigo full end-to-end booking
+2026-05-22 00:11:19,791 [INFO] Browser started: MicrosoftEdge
+2026-05-22 00:11:19,792 [INFO] Opening https://www.ixigo.com/flights
+2026-05-22 00:11:27,667 [INFO] Sale banner closed.
+2026-05-22 00:11:27,733 [INFO] Starting scenario: Open site
+2026-05-22 00:11:27,734 [INFO] Opening https://www.ixigo.com/flights
+2026-05-22 00:11:35,465 [INFO] Sale banner closed.
+2026-05-22 00:11:35,871 [INFO] BDD scenario screenshot saved: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\utils\..\logs\Open_site_passed_20260522_001135.png
+2026-05-22 00:11:35,875 [INFO] Starting scenario: Login
+2026-05-22 00:11:35,875 [INFO] Clicking Log in/Sign up...
+2026-05-22 00:11:36,010 [INFO] Login dialog opened.
+2026-05-22 00:11:37,113 [INFO] Mobile number submitted; waiting for OTP.
+2026-05-22 00:11:37,113 [INFO] Waiting up to 300s for manual OTP entry...
+2026-05-22 00:11:57,330 [INFO] Login completed!
+2026-05-22 00:11:57,686 [INFO] BDD scenario screenshot saved: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\utils\..\logs\Login_passed_20260522_001157.png
+2026-05-22 00:11:57,689 [INFO] Starting scenario: Search flights
+2026-05-22 00:11:57,689 [INFO] Opening https://www.ixigo.com/flights
+2026-05-22 00:12:05,125 [INFO] Sale banner closed.
+2026-05-22 00:12:05,183 [INFO] Waiting for search form to be interactive...
+2026-05-22 00:12:05,224 [INFO] Search form is ready.
+2026-05-22 00:12:05,226 [INFO] Selecting From: Mumbai (BOM)
+2026-05-22 00:12:10,991 [INFO] Selected BOM from dropdown.
+2026-05-22 00:12:10,991 [INFO] Selecting To: Bengaluru (BLR)
+2026-05-22 00:12:16,678 [INFO] Selected BLR from dropdown.
+2026-05-22 00:12:16,678 [INFO] Selecting date: 10 June 2026
+2026-05-22 00:12:17,094 [INFO] Selected date: June 10, 2026
+2026-05-22 00:12:17,094 [INFO] Clicking Search...
+2026-05-22 00:12:24,207 [INFO] Sale banner closed.
+2026-05-22 00:12:24,364 [INFO] Search clicked.
+2026-05-22 00:12:25,781 [INFO] Waiting for flight results...
+2026-05-22 00:12:27,024 [INFO] Results loaded.
+2026-05-22 00:12:27,025 [INFO] Dismissing results-page popup...
+2026-05-22 00:12:28,050 [INFO] BDD scenario screenshot saved: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\utils\..\logs\Search_flights_passed_20260522_001227.png
+2026-05-22 00:12:28,054 [INFO] Starting scenario: Apply nonstop filter
+2026-05-22 00:12:28,057 [INFO] Applying Non-Stop filter...
+2026-05-22 00:12:28,136 [INFO] Non-Stop filter applied.
+2026-05-22 00:12:29,137 [INFO] BDD scenario screenshot saved: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\utils\..\logs\Apply_nonstop_filter_passed_20260522_001228.png
+2026-05-22 00:12:29,141 [INFO] Starting scenario: Sort by price
+2026-05-22 00:12:29,142 [INFO] Sorting by Price (Low to High)...
+2026-05-22 00:12:29,200 [INFO] Sorted by Price.
+2026-05-22 00:12:29,252 [INFO] Dismissing results-page popup...
+2026-05-22 00:12:30,503 [INFO] BDD scenario screenshot saved: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\utils\..\logs\Sort_by_price_passed_20260522_001230.png
+2026-05-22 00:12:30,510 [INFO] Starting scenario: Print results
+2026-05-22 00:12:30,511 [INFO] ============================================================
+2026-05-22 00:12:31,899 [INFO] 37 Flights Available
+2026-05-22 00:12:32,047 [INFO] 
+--- Flight 1 ---
+2026-05-22 00:12:32,048 [INFO]   ₹5,058
+2026-05-22 00:12:32,048 [INFO]   Extra ₹290 Off
+2026-05-22 00:12:32,048 [INFO]   Book
+2026-05-22 00:12:32,048 [INFO] 
+--- Flight 2 ---
+2026-05-22 00:12:32,048 [INFO]   Recommended
+2026-05-22 00:12:32,048 [INFO]   Akasa Air
+2026-05-22 00:12:32,048 [INFO]   QP2001
+2026-05-22 00:12:32,048 [INFO]   07:15
+2026-05-22 00:12:32,050 [INFO]   NMI
+2026-05-22 00:12:32,050 [INFO]   1h 45m
+2026-05-22 00:12:32,051 [INFO]   Non-stop
+2026-05-22 00:12:32,051 [INFO]   09:00
+2026-05-22 00:12:32,051 [INFO] 
+--- Flight 3 ---
+2026-05-22 00:12:32,051 [INFO]   ₹5,308
+2026-05-22 00:12:32,052 [INFO]   Extra ₹260 Off
+2026-05-22 00:12:32,052 [INFO]   Book
+2026-05-22 00:12:32,052 [INFO] 
+--- Flight 4 ---
+2026-05-22 00:12:32,052 [INFO]   Akasa Air
+2026-05-22 00:12:32,052 [INFO]   QP1985
+2026-05-22 00:12:32,052 [INFO]   23:20
+2026-05-22 00:12:32,052 [INFO]   BOM
+2026-05-22 00:12:32,053 [INFO]   1h 50m
+2026-05-22 00:12:32,053 [INFO]   Non-stop
+2026-05-22 00:12:32,053 [INFO]   01:10
+2026-05-22 00:12:32,054 [INFO]   +1
+2026-05-22 00:12:32,055 [INFO] 
+--- Flight 5 ---
+2026-05-22 00:12:32,055 [INFO]   ₹5,308
+2026-05-22 00:12:32,056 [INFO]   Extra ₹230 Off
+2026-05-22 00:12:32,056 [INFO]   Book
+2026-05-22 00:12:32,057 [INFO] ============================================================
+2026-05-22 00:12:32,566 [INFO] BDD scenario screenshot saved: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\utils\..\logs\Print_results_passed_20260522_001232.png
+2026-05-22 00:12:32,570 [INFO] Starting scenario: Click book
+2026-05-22 00:12:32,572 [INFO] Clicking Book on flight #1...
+2026-05-22 00:12:32,817 [INFO] Book clicked — proceeding to traveller details.
+2026-05-22 00:12:33,784 [INFO] BDD scenario screenshot saved: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\utils\..\logs\Click_book_passed_20260522_001233.png
+2026-05-22 00:12:33,819 [INFO] Starting scenario: Booking page
+2026-05-22 00:12:33,820 [INFO] Waiting for booking/traveller details page...
+2026-05-22 00:12:33,828 [INFO] Booking page loaded.
+2026-05-22 00:12:34,064 [INFO] BDD scenario screenshot saved: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\utils\..\logs\Booking_page_passed_20260522_001233.png
+2026-05-22 00:12:34,070 [INFO] Starting scenario: Decline cancellation
+2026-05-22 00:12:34,072 [INFO] Selecting 'I don't want Free Cancellation'...
+2026-05-22 00:12:41,658 [INFO] Declined Free Cancellation.
+2026-05-22 00:12:42,262 [INFO] BDD scenario screenshot saved: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\utils\..\logs\Decline_cancellation_passed_20260522_001241.png
+2026-05-22 00:12:42,266 [INFO] Starting scenario: Fill traveller
+2026-05-22 00:12:42,278 [INFO] Filling traveller form from CSV data...
+2026-05-22 00:12:42,279 [INFO] Deselecting any pre-selected saved travellers...
+2026-05-22 00:12:44,325 [INFO] Expanding traveller form...
+2026-05-22 00:12:48,969 [INFO] Expanded traveller form.
+2026-05-22 00:12:48,970 [INFO] Selecting title: Mr
+2026-05-22 00:12:48,995 [INFO] Found 'Title' via: //*[normalize-space()='Title']/following-sibling::input
+2026-05-22 00:12:49,288 [INFO] Title 'Mr' selected from dropdown.
+2026-05-22 00:12:49,288 [INFO] Filling 'First': Rahul Kumar
+2026-05-22 00:12:49,311 [INFO] Found 'First' via: //*[contains(text(),'First')]/following-sibling::input
+2026-05-22 00:12:49,912 [INFO] Filling 'Last Name': Sharma
+2026-05-22 00:12:49,934 [INFO] Found 'Last Name' via: //*[normalize-space()='Last Name']/following-sibling::input
+2026-05-22 00:12:50,457 [INFO] Filling 'Mobile Number': 9876543210
+2026-05-22 00:12:50,479 [INFO] Found 'Mobile Number' via: //*[normalize-space()='Mobile Number']/following-sibling::input
+2026-05-22 00:12:51,031 [INFO] Filling 'Email': rahul.sharma@example.com
+2026-05-22 00:12:51,058 [INFO] Found 'Email' via: //*[normalize-space()='Email']/following-sibling::input
+2026-05-22 00:12:51,925 [INFO] Found 'Pincode' via: //*[normalize-space()='Pincode']/following-sibling::input
+2026-05-22 00:12:51,925 [INFO] Filling 'Pincode': 560001
+2026-05-22 00:12:51,941 [INFO] Found 'Pincode' via: //*[normalize-space()='Pincode']/following-sibling::input
+2026-05-22 00:12:52,396 [INFO] Found 'Address' via: //*[normalize-space()='Address']/following-sibling::input
+2026-05-22 00:12:52,396 [INFO] Filling 'Address': 42 MG Road Bengaluru
+2026-05-22 00:12:52,447 [INFO] Found 'Address' via: //*[normalize-space()='Address']/following-sibling::input
+2026-05-22 00:12:53,168 [INFO] Traveller form filled successfully (all fields).
+2026-05-22 00:12:53,596 [INFO] BDD scenario screenshot saved: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\utils\..\logs\Fill_traveller_passed_20260522_001253.png
+2026-05-22 00:12:53,599 [INFO] Starting scenario: Continue and confirm
+2026-05-22 00:12:53,599 [INFO] Clicking Continue...
+2026-05-22 00:12:53,979 [INFO] Continue clicked.
+2026-05-22 00:12:53,980 [INFO] Looking for Confirm button on review dialog...
+2026-05-22 00:12:54,661 [INFO] Confirm clicked.
+2026-05-22 00:12:54,908 [INFO] Checking for upsell popup...
+2026-05-22 00:12:55,544 [INFO] Upsell popup dismissed (No, Thanks).
+2026-05-22 00:12:55,827 [INFO] BDD scenario screenshot saved: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\utils\..\logs\Continue_and_confirm_passed_20260522_001255.png
+2026-05-22 00:12:55,830 [INFO] Starting scenario: Add-ons page
+2026-05-22 00:12:55,830 [INFO] Waiting for Add-ons page to load...
+2026-05-22 00:13:02,499 [INFO] Add-ons page loaded.
+2026-05-22 00:13:03,040 [INFO] BDD scenario screenshot saved: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\utils\..\logs\Add-ons_page_passed_20260522_001302.png
+2026-05-22 00:13:03,043 [INFO] Starting scenario: Select seat
+2026-05-22 00:13:03,044 [INFO] Attempting to select a seat...
+2026-05-22 00:13:15,177 [WARNING] Seat map did not load.
+2026-05-22 00:13:15,690 [INFO] BDD scenario screenshot saved: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\utils\..\logs\Select_seat_passed_20260522_001315.png
+2026-05-22 00:13:15,693 [INFO] Starting scenario: Skip to payment
+2026-05-22 00:13:15,693 [INFO] Clicking Skip to Payment...
+2026-05-22 00:13:22,976 [INFO] Skipped to payment.
+2026-05-22 00:13:23,537 [INFO] BDD scenario screenshot saved: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\utils\..\logs\Skip_to_payment_passed_20260522_001323.png
+2026-05-22 00:13:23,539 [INFO] Starting scenario: Payment page
+2026-05-22 00:13:23,541 [INFO] Waiting for Payment page...
+2026-05-22 00:13:23,556 [INFO] Payment page reached. URL: https://www.ixigo.com/payments/view/home/1/01KS5XJVW6P69X8RH6ECMZC4DVJK0XV1S5W?showHeader=true&tripId=IF26052145394782&providerId=1044&productType=FLIGHT&isr=false&juspaySDK=01KS5XJVW6RSQ3SZ5ND1FQNBTVJ10VSKXW5
+2026-05-22 00:13:24,044 [INFO] BDD scenario screenshot saved: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\utils\..\logs\Payment_page_passed_20260522_001323.png
+2026-05-22 00:13:24,046 [INFO] Closing browser after feature: Ixigo full end-to-end booking
+2026-05-22 00:13:26,625 [INFO] BDD suite finished.
+2026-05-22 00:13:26,627 [INFO] Allure report will open shortly. Logs: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\reports\allure-command-*.log
+2026-05-22 00:19:15,265 [INFO] BDD suite started.
+2026-05-22 00:19:15,267 [INFO] Starting feature: Ixigo combined flow
+2026-05-22 00:19:16,586 [INFO] Browser started: MicrosoftEdge
+2026-05-22 00:19:16,586 [INFO] Opening https://www.ixigo.com/flights
+2026-05-22 00:19:24,574 [INFO] Sale banner closed.
+2026-05-22 00:19:24,655 [INFO] Starting scenario: Same source and destination should not navigate to results
+2026-05-22 00:19:25,707 [INFO] Browser started: MicrosoftEdge
+2026-05-22 00:19:25,707 [INFO] Opening https://www.ixigo.com/flights
+2026-05-22 00:19:33,781 [INFO] Sale banner closed.
+2026-05-22 00:19:33,877 [INFO] Opening https://www.ixigo.com/flights
+2026-05-22 00:19:41,473 [INFO] Sale banner closed.
+2026-05-22 00:19:41,530 [INFO] Waiting for search form to be interactive...
+2026-05-22 00:19:41,572 [INFO] Search form is ready.
+2026-05-22 00:19:41,574 [INFO] Selecting From: Mumbai (BOM)
+2026-05-22 00:19:47,231 [INFO] Selected BOM from dropdown.
+2026-05-22 00:19:47,232 [INFO] Selecting To: Mumbai (BOM)
+2026-05-22 00:19:52,955 [INFO] Selected BOM from dropdown.
+2026-05-22 00:19:52,955 [INFO] Selecting date: 4 June 2026
+2026-05-22 00:20:00,658 [INFO] Selected date (abbr fallback): June 4, 2026
+2026-05-22 00:20:00,658 [INFO] Clicking Search...
+2026-05-22 00:20:07,763 [INFO] Sale banner closed.
+2026-05-22 00:20:07,973 [INFO] Search clicked.
+2026-05-22 00:20:11,812 [INFO] BDD scenario screenshot saved: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\utils\..\logs\Same_source_and_destination_should_not_navigate_to_results_passed_20260522_002011.png
+2026-05-22 00:20:11,812 [INFO] Closing isolated browser after scenario: Same source and destination should not navigate to results
+2026-05-22 00:20:14,506 [INFO] Starting scenario: Search without destination should not navigate to results
+2026-05-22 00:20:15,494 [INFO] Browser started: MicrosoftEdge
+2026-05-22 00:20:15,494 [INFO] Opening https://www.ixigo.com/flights
+2026-05-22 00:20:23,324 [INFO] Sale banner closed.
+2026-05-22 00:20:23,402 [INFO] Opening https://www.ixigo.com/flights
+2026-05-22 00:20:31,070 [INFO] Sale banner closed.
+2026-05-22 00:20:31,135 [INFO] Waiting for search form to be interactive...
+2026-05-22 00:20:31,181 [INFO] Search form is ready.
+2026-05-22 00:20:31,181 [INFO] Selecting From: Mumbai (BOM)
+2026-05-22 00:20:36,860 [INFO] Selected BOM from dropdown.
+2026-05-22 00:20:36,860 [INFO] Clicking Search...
+2026-05-22 00:20:43,980 [INFO] Sale banner closed.
+2026-05-22 00:20:44,159 [INFO] Search clicked.
+2026-05-22 00:20:48,568 [INFO] BDD scenario screenshot saved: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\utils\..\logs\Search_without_destination_should_not_navigate_to_results_passed_20260522_002048.png
+2026-05-22 00:20:48,568 [INFO] Closing isolated browser after scenario: Search without destination should not navigate to results
+2026-05-22 00:20:51,068 [INFO] Closing browser after feature: Ixigo combined flow
+2026-05-22 00:20:53,450 [INFO] BDD suite finished.
+2026-05-22 00:20:53,451 [INFO] Allure report will open shortly. Logs: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\reports\allure-command-*.log
+2026-05-22 00:22:16,579 [INFO] BDD suite started.
+2026-05-22 00:22:16,581 [INFO] Starting feature: Ixigo combined flow
+2026-05-22 00:22:17,651 [INFO] Browser started: MicrosoftEdge
+2026-05-22 00:22:17,652 [INFO] Opening https://www.ixigo.com/flights
+2026-05-22 00:22:25,500 [INFO] Sale banner closed.
+2026-05-22 00:22:25,624 [INFO] Starting scenario: Same source and destination should not navigate to results
+2026-05-22 00:22:26,636 [INFO] Browser started: MicrosoftEdge
+2026-05-22 00:22:26,637 [INFO] Opening https://www.ixigo.com/flights
+2026-05-22 00:22:34,598 [INFO] Sale banner closed.
+2026-05-22 00:22:34,689 [INFO] Opening https://www.ixigo.com/flights
+2026-05-22 00:22:42,346 [INFO] Sale banner closed.
+2026-05-22 00:22:42,404 [INFO] Waiting for search form to be interactive...
+2026-05-22 00:22:42,445 [INFO] Search form is ready.
+2026-05-22 00:22:42,445 [INFO] Selecting From: Mumbai (BOM)
+2026-05-22 00:22:48,178 [INFO] Selected BOM from dropdown.
+2026-05-22 00:22:48,179 [INFO] Selecting To: Mumbai (BOM)
+2026-05-22 00:22:53,842 [INFO] Selected BOM from dropdown.
+2026-05-22 00:22:53,842 [INFO] Selecting date: 4 June 2026
+2026-05-22 00:23:01,462 [INFO] Selected date (abbr fallback): June 4, 2026
+2026-05-22 00:23:01,462 [INFO] Clicking Search...
+2026-05-22 00:23:08,535 [INFO] Sale banner closed.
+2026-05-22 00:23:08,722 [INFO] Search clicked.
+2026-05-22 00:23:12,513 [INFO] BDD scenario screenshot saved: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\utils\..\logs\Same_source_and_destination_should_not_navigate_to_results_passed_20260522_002312.png
+2026-05-22 00:23:12,515 [INFO] Closing isolated browser after scenario: Same source and destination should not navigate to results
+2026-05-22 00:23:15,355 [INFO] Starting scenario: Search without destination should not navigate to results
+2026-05-22 00:23:16,321 [INFO] Browser started: MicrosoftEdge
+2026-05-22 00:23:16,322 [INFO] Opening https://www.ixigo.com/flights
+2026-05-22 00:23:24,206 [INFO] Sale banner closed.
+2026-05-22 00:23:24,405 [INFO] Opening https://www.ixigo.com/flights
+2026-05-22 00:23:32,454 [INFO] Sale banner closed.
+2026-05-22 00:23:32,509 [INFO] Waiting for search form to be interactive...
+2026-05-22 00:23:32,565 [INFO] Search form is ready.
+2026-05-22 00:23:32,565 [INFO] Selecting From: Mumbai (BOM)
+2026-05-22 00:23:38,205 [INFO] Selected BOM from dropdown.
+2026-05-22 00:23:38,205 [INFO] Clicking Search...
+2026-05-22 00:23:45,272 [INFO] Sale banner closed.
+2026-05-22 00:23:45,457 [INFO] Search clicked.
+2026-05-22 00:23:49,821 [INFO] BDD scenario screenshot saved: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\utils\..\logs\Search_without_destination_should_not_navigate_to_results_passed_20260522_002349.png
+2026-05-22 00:23:49,821 [INFO] Closing isolated browser after scenario: Search without destination should not navigate to results
+2026-05-22 00:23:52,349 [INFO] Closing browser after feature: Ixigo combined flow
+2026-05-22 00:23:54,757 [INFO] BDD suite finished.
+2026-05-22 00:23:54,758 [INFO] Allure report will open shortly. Logs: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\reports\allure-command-*.log
+2026-05-22 00:26:08,278 [INFO] BDD suite started.
+2026-05-22 00:26:08,280 [INFO] Starting feature: Ixigo combined flow
+2026-05-22 00:26:09,230 [INFO] Browser started: MicrosoftEdge
+2026-05-22 00:26:09,231 [INFO] Opening https://www.ixigo.com/flights
+2026-05-22 00:26:17,071 [INFO] Sale banner closed.
+2026-05-22 00:26:17,228 [INFO] Starting scenario: Same source and destination should not navigate to results
+2026-05-22 00:26:18,636 [INFO] Browser started: MicrosoftEdge
+2026-05-22 00:26:18,637 [INFO] Opening https://www.ixigo.com/flights
+2026-05-22 00:26:26,584 [INFO] Sale banner closed.
+2026-05-22 00:26:26,644 [INFO] Opening https://www.ixigo.com/flights
+2026-05-22 00:26:34,173 [INFO] Sale banner closed.
+2026-05-22 00:26:34,228 [INFO] Waiting for search form to be interactive...
+2026-05-22 00:26:34,270 [INFO] Search form is ready.
+2026-05-22 00:26:34,270 [INFO] Selecting From: Mumbai (BOM)
+2026-05-22 00:26:39,877 [INFO] Selected BOM from dropdown.
+2026-05-22 00:26:39,878 [INFO] Selecting To: Mumbai (BOM)
+2026-05-22 00:26:45,472 [INFO] Selected BOM from dropdown.
+2026-05-22 00:26:45,474 [INFO] Selecting date: 4 June 2026
+2026-05-22 00:26:53,005 [INFO] Selected date (abbr fallback): June 4, 2026
+2026-05-22 00:26:53,005 [INFO] Clicking Search...
+2026-05-22 00:27:00,112 [INFO] Sale banner closed.
+2026-05-22 00:27:00,310 [INFO] Search clicked.
+2026-05-22 00:27:04,105 [INFO] BDD scenario screenshot saved: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\utils\..\logs\Same_source_and_destination_should_not_navigate_to_results_passed_20260522_002703.png
+2026-05-22 00:27:04,105 [INFO] Closing isolated browser after scenario: Same source and destination should not navigate to results
+2026-05-22 00:27:06,448 [INFO] Starting scenario: Search without destination should not navigate to results
+2026-05-22 00:27:07,315 [INFO] Browser started: MicrosoftEdge
+2026-05-22 00:27:07,317 [INFO] Opening https://www.ixigo.com/flights
+2026-05-22 00:27:15,222 [INFO] Sale banner closed.
+2026-05-22 00:27:15,321 [INFO] Opening https://www.ixigo.com/flights
+2026-05-22 00:27:22,984 [INFO] Sale banner closed.
+2026-05-22 00:27:23,037 [INFO] Waiting for search form to be interactive...
+2026-05-22 00:27:23,080 [INFO] Search form is ready.
+2026-05-22 00:27:23,082 [INFO] Selecting From: Mumbai (BOM)
+2026-05-22 00:27:28,680 [INFO] Selected BOM from dropdown.
+2026-05-22 00:27:28,680 [INFO] Clicking Search...
+2026-05-22 00:27:35,746 [INFO] Sale banner closed.
+2026-05-22 00:27:35,904 [INFO] Search clicked.
+2026-05-22 00:27:40,221 [INFO] BDD scenario screenshot saved: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\utils\..\logs\Search_without_destination_should_not_navigate_to_results_passed_20260522_002739.png
+2026-05-22 00:27:40,221 [INFO] Closing isolated browser after scenario: Search without destination should not navigate to results
+2026-05-22 00:27:42,742 [INFO] Closing browser after feature: Ixigo combined flow
+2026-05-22 00:27:45,089 [INFO] BDD suite finished.
+2026-05-22 00:27:45,089 [INFO] Allure report will open shortly. Logs: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\reports\allure-command-*.log
+2026-05-22 00:28:07,577 [INFO] BDD suite started.
+2026-05-22 00:28:07,579 [INFO] Starting feature: Ixigo combined flow
+2026-05-22 00:28:08,689 [INFO] Browser started: MicrosoftEdge
+2026-05-22 00:28:08,690 [INFO] Opening https://www.ixigo.com/flights
+2026-05-22 00:28:16,450 [INFO] Sale banner closed.
+2026-05-22 00:28:16,604 [INFO] Starting scenario: Open ixigo page
+2026-05-22 00:28:16,605 [INFO] Opening https://www.ixigo.com/flights
+2026-05-22 00:28:24,466 [INFO] Sale banner closed.
+2026-05-22 00:28:25,225 [INFO] BDD scenario screenshot saved: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\utils\..\logs\Open_ixigo_page_passed_20260522_002824.png
+2026-05-22 00:28:25,272 [INFO] Starting scenario: Page elements are present
+2026-05-22 00:28:25,787 [INFO] BDD scenario screenshot saved: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\utils\..\logs\Page_elements_are_present_passed_20260522_002825.png
+2026-05-22 00:28:25,791 [INFO] Starting scenario: Search BOM to BLR flights
+2026-05-22 00:28:25,792 [INFO] Opening https://www.ixigo.com/flights
+2026-05-22 00:28:33,248 [INFO] Sale banner closed.
+2026-05-22 00:28:33,298 [INFO] Waiting for search form to be interactive...
+2026-05-22 00:28:33,337 [INFO] Search form is ready.
+2026-05-22 00:28:33,337 [INFO] Selecting From: Mumbai (BOM)
+2026-05-22 00:28:39,562 [INFO] Selected BOM from dropdown.
+2026-05-22 00:28:39,563 [INFO] Selecting To: Bengaluru (BLR)
+2026-05-22 00:28:45,714 [INFO] Selected BLR from dropdown.
+2026-05-22 00:28:45,715 [INFO] Selecting date: 10 June 2026
+2026-05-22 00:28:46,105 [INFO] Selected date: June 10, 2026
+2026-05-22 00:28:46,105 [INFO] Clicking Search...
+2026-05-22 00:28:53,207 [INFO] Sale banner closed.
+2026-05-22 00:28:53,367 [INFO] Search clicked.
+2026-05-22 00:28:56,748 [INFO] Waiting for flight results...
+2026-05-22 00:28:56,814 [INFO] Results loaded.
+2026-05-22 00:28:56,814 [INFO] Dismissing results-page popup...
+2026-05-22 00:28:57,562 [INFO] BDD scenario screenshot saved: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\utils\..\logs\Search_BOM_to_BLR_flights_passed_20260522_002857.png
+2026-05-22 00:28:57,568 [INFO] Starting scenario: Flight count and book buttons are visible
+2026-05-22 00:28:58,040 [INFO] BDD scenario screenshot saved: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\utils\..\logs\Flight_count_and_book_buttons_are_visible_passed_20260522_002857.png
+2026-05-22 00:28:58,041 [INFO] Starting scenario: Apply nonstop filter and sort by price
+2026-05-22 00:28:58,042 [INFO] Applying Non-Stop filter...
+2026-05-22 00:28:59,076 [INFO] Non-Stop filter applied.
+2026-05-22 00:28:59,479 [INFO] Sorting by Price (Low to High)...
+2026-05-22 00:28:59,521 [INFO] Sorted by Price.
+2026-05-22 00:28:59,546 [INFO] Dismissing results-page popup...
+2026-05-22 00:29:00,663 [INFO] BDD scenario screenshot saved: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\utils\..\logs\Apply_nonstop_filter_and_sort_by_price_passed_20260522_002900.png
+2026-05-22 00:29:00,669 [INFO] Starting scenario: Print flight results
+2026-05-22 00:29:00,670 [INFO] ============================================================
+2026-05-22 00:29:01,957 [INFO] 37 Flights Available
+2026-05-22 00:29:02,096 [INFO] 
+--- Flight 1 ---
+2026-05-22 00:29:02,096 [INFO]   ₹5,058
+2026-05-22 00:29:02,096 [INFO]   Extra ₹615 Off
+2026-05-22 00:29:02,097 [INFO]   Book
+2026-05-22 00:29:02,097 [INFO] 
+--- Flight 2 ---
+2026-05-22 00:29:02,097 [INFO]   Cheapest
+2026-05-22 00:29:02,097 [INFO]   Akasa Air
+2026-05-22 00:29:02,097 [INFO]   QP2001
+2026-05-22 00:29:02,097 [INFO]   07:15
+2026-05-22 00:29:02,097 [INFO]   NMI
+2026-05-22 00:29:02,097 [INFO]   1h 45m
+2026-05-22 00:29:02,098 [INFO]   Non-stop
+2026-05-22 00:29:02,098 [INFO]   09:00
+2026-05-22 00:29:02,098 [INFO] 
+--- Flight 3 ---
+2026-05-22 00:29:02,098 [INFO]   ₹5,308
+2026-05-22 00:29:02,098 [INFO]   Extra ₹505 Off
+2026-05-22 00:29:02,099 [INFO]   Book
+2026-05-22 00:29:02,099 [INFO] 
+--- Flight 4 ---
+2026-05-22 00:29:02,101 [INFO]   Akasa Air
+2026-05-22 00:29:02,101 [INFO]   QP1985
+2026-05-22 00:29:02,101 [INFO]   23:20
+2026-05-22 00:29:02,101 [INFO]   BOM
+2026-05-22 00:29:02,101 [INFO]   1h 50m
+2026-05-22 00:29:02,101 [INFO]   Non-stop
+2026-05-22 00:29:02,101 [INFO]   01:10
+2026-05-22 00:29:02,102 [INFO]   +1
+2026-05-22 00:29:02,102 [INFO] 
+--- Flight 5 ---
+2026-05-22 00:29:02,102 [INFO]   ₹5,525
+2026-05-22 00:29:02,103 [INFO]   Extra ₹675 Off
+2026-05-22 00:29:02,103 [INFO]   Book
+2026-05-22 00:29:02,104 [INFO] ============================================================
+2026-05-22 00:29:02,565 [INFO] BDD scenario screenshot saved: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\utils\..\logs\Print_flight_results_passed_20260522_002902.png
+2026-05-22 00:29:02,572 [INFO] Starting scenario: Same source and destination should not navigate to results
+2026-05-22 00:29:03,504 [INFO] Browser started: MicrosoftEdge
+2026-05-22 00:29:03,505 [INFO] Opening https://www.ixigo.com/flights
+2026-05-22 00:29:11,314 [INFO] Sale banner closed.
+2026-05-22 00:29:11,382 [INFO] Opening https://www.ixigo.com/flights
+2026-05-22 00:29:18,942 [INFO] Sale banner closed.
+2026-05-22 00:29:19,000 [INFO] Waiting for search form to be interactive...
+2026-05-22 00:29:19,044 [INFO] Search form is ready.
+2026-05-22 00:29:19,045 [INFO] Selecting From: Mumbai (BOM)
+2026-05-22 00:29:24,671 [INFO] Selected BOM from dropdown.
+2026-05-22 00:29:24,672 [INFO] Selecting To: Mumbai (BOM)
+2026-05-22 00:29:30,293 [INFO] Selected BOM from dropdown.
+2026-05-22 00:29:30,293 [INFO] Selecting date: 4 June 2026
+2026-05-22 00:29:37,928 [INFO] Selected date (abbr fallback): June 4, 2026
+2026-05-22 00:29:37,929 [INFO] Clicking Search...
+2026-05-22 00:29:45,025 [INFO] Sale banner closed.
+2026-05-22 00:29:45,226 [INFO] Search clicked.
+2026-05-22 00:29:49,040 [INFO] BDD scenario screenshot saved: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\utils\..\logs\Same_source_and_destination_should_not_navigate_to_results_passed_20260522_002948.png
+2026-05-22 00:29:49,040 [INFO] Closing isolated browser after scenario: Same source and destination should not navigate to results
+2026-05-22 00:29:51,488 [INFO] Starting scenario: Search without destination should not navigate to results
+2026-05-22 00:29:52,354 [INFO] Browser started: MicrosoftEdge
+2026-05-22 00:29:52,355 [INFO] Opening https://www.ixigo.com/flights
+2026-05-22 00:30:00,371 [INFO] Sale banner closed.
+2026-05-22 00:30:00,430 [INFO] Opening https://www.ixigo.com/flights
+2026-05-22 00:30:08,013 [INFO] Sale banner closed.
+2026-05-22 00:30:08,099 [INFO] Waiting for search form to be interactive...
+2026-05-22 00:30:08,179 [INFO] Search form is ready.
+2026-05-22 00:30:08,179 [INFO] Selecting From: Mumbai (BOM)
+2026-05-22 00:30:14,160 [INFO] Selected BOM from dropdown.
+2026-05-22 00:30:14,160 [INFO] Clicking Search...
+2026-05-22 00:30:21,268 [INFO] Sale banner closed.
+2026-05-22 00:30:21,556 [INFO] Search clicked.
+2026-05-22 00:30:26,104 [INFO] BDD scenario screenshot saved: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\utils\..\logs\Search_without_destination_should_not_navigate_to_results_passed_20260522_003025.png
+2026-05-22 00:30:26,105 [INFO] Closing isolated browser after scenario: Search without destination should not navigate to results
+2026-05-22 00:30:28,723 [INFO] Starting scenario: Booking flow reaches traveller details
+2026-05-22 00:30:29,944 [INFO] Browser started: MicrosoftEdge
+2026-05-22 00:30:29,945 [INFO] Opening https://www.ixigo.com/flights
+2026-05-22 00:30:38,097 [INFO] Sale banner closed.
+2026-05-22 00:30:38,216 [INFO] Opening https://www.ixigo.com/flights
+2026-05-22 00:30:46,138 [INFO] Sale banner closed.
+2026-05-22 00:30:46,213 [INFO] Waiting for search form to be interactive...
+2026-05-22 00:30:46,280 [INFO] Search form is ready.
+2026-05-22 00:30:46,280 [INFO] Selecting From: Mumbai (BOM)
+2026-05-22 00:30:52,277 [INFO] Selected BOM from dropdown.
+2026-05-22 00:30:52,277 [INFO] Selecting To: Bengaluru (BLR)
+2026-05-22 00:30:58,317 [INFO] Selected BLR from dropdown.
+2026-05-22 00:30:58,318 [INFO] Selecting date: 4 June 2026
+2026-05-22 00:31:06,122 [INFO] Selected date (abbr fallback): June 4, 2026
+2026-05-22 00:31:06,122 [INFO] Clicking Search...
+2026-05-22 00:31:13,280 [INFO] Sale banner closed.
+2026-05-22 00:31:13,530 [INFO] Search clicked.
+2026-05-22 00:31:17,115 [INFO] Waiting for flight results...
+2026-05-22 00:31:17,788 [INFO] Results loaded.
+2026-05-22 00:31:17,789 [INFO] Dismissing results-page popup...
+2026-05-22 00:31:18,265 [INFO] Applying Non-Stop filter...
+2026-05-22 00:31:21,612 [INFO] Non-Stop filter applied.
+2026-05-22 00:31:22,201 [INFO] Sorting by Price (Low to High)...
+2026-05-22 00:31:22,275 [INFO] Sorted by Price.
+2026-05-22 00:31:22,352 [INFO] Dismissing results-page popup...
+2026-05-22 00:31:23,296 [INFO] Clicking Book on flight #1...
+2026-05-22 00:31:23,619 [INFO] Book clicked — proceeding to traveller details.
+2026-05-22 00:31:24,422 [INFO] Waiting for booking/traveller details page...
+2026-05-22 00:31:24,431 [INFO] Booking page loaded.
+2026-05-22 00:31:24,479 [INFO] Selecting 'I don't want Free Cancellation'...
+2026-05-22 00:31:32,337 [INFO] Declined Free Cancellation.
+2026-05-22 00:31:32,704 [INFO] Waiting for booking/traveller details page...
+2026-05-22 00:31:32,712 [INFO] Booking page loaded.
+2026-05-22 00:31:33,188 [INFO] BDD scenario screenshot saved: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\utils\..\logs\Booking_flow_reaches_traveller_details_passed_20260522_003132.png
+2026-05-22 00:31:33,188 [INFO] Closing isolated browser after scenario: Booking flow reaches traveller details
+2026-05-22 00:31:35,945 [INFO] Closing browser after feature: Ixigo combined flow
+2026-05-22 00:31:38,547 [INFO] Starting feature: Ixigo full end-to-end booking
+2026-05-22 00:31:39,665 [INFO] Browser started: MicrosoftEdge
+2026-05-22 00:31:39,667 [INFO] Opening https://www.ixigo.com/flights
+2026-05-22 00:31:47,573 [INFO] Sale banner closed.
+2026-05-22 00:31:47,684 [INFO] Starting scenario: Open site
+2026-05-22 00:31:47,687 [INFO] Opening https://www.ixigo.com/flights
+2026-05-22 00:31:55,713 [INFO] Sale banner closed.
+2026-05-22 00:31:56,359 [INFO] BDD scenario screenshot saved: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\utils\..\logs\Open_site_passed_20260522_003155.png
+2026-05-22 00:31:56,363 [INFO] Starting scenario: Login
+2026-05-22 00:31:56,364 [INFO] Clicking Log in/Sign up...
+2026-05-22 00:31:56,562 [INFO] Login dialog opened.
+2026-05-22 00:31:58,041 [INFO] Mobile number submitted; waiting for OTP.
+2026-05-22 00:31:58,042 [INFO] Waiting up to 300s for manual OTP entry...
+2026-05-22 00:32:14,271 [INFO] Login completed!
+2026-05-22 00:32:14,745 [INFO] BDD scenario screenshot saved: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\utils\..\logs\Login_passed_20260522_003214.png
+2026-05-22 00:32:14,748 [INFO] Starting scenario: Search flights
+2026-05-22 00:32:14,748 [INFO] Opening https://www.ixigo.com/flights
+2026-05-22 00:32:22,362 [INFO] Sale banner closed.
+2026-05-22 00:32:22,459 [INFO] Waiting for search form to be interactive...
+2026-05-22 00:32:22,529 [INFO] Search form is ready.
+2026-05-22 00:32:22,529 [INFO] Selecting From: Delhi (DEL)
+2026-05-22 00:32:28,574 [INFO] Selected DEL from dropdown.
+2026-05-22 00:32:28,574 [INFO] Selecting To: Mumbai (BOM)
+2026-05-22 00:32:34,537 [INFO] Selected BOM from dropdown.
+2026-05-22 00:32:34,537 [INFO] Selecting date: 15 June 2026
+2026-05-22 00:32:35,098 [INFO] Selected date: June 15, 2026
+2026-05-22 00:32:35,099 [INFO] Clicking Search...
+2026-05-22 00:32:42,240 [INFO] Sale banner closed.
+2026-05-22 00:32:42,497 [INFO] Search clicked.
+2026-05-22 00:32:44,341 [INFO] Waiting for flight results...
+2026-05-22 00:32:46,685 [INFO] Results loaded.
+2026-05-22 00:32:46,685 [INFO] Dismissing results-page popup...
+2026-05-22 00:32:47,909 [INFO] BDD scenario screenshot saved: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\utils\..\logs\Search_flights_passed_20260522_003247.png
+2026-05-22 00:32:47,946 [INFO] Starting scenario: Apply nonstop filter
+2026-05-22 00:32:47,947 [INFO] Applying Non-Stop filter...
+2026-05-22 00:32:49,739 [INFO] Non-Stop filter applied.
+2026-05-22 00:32:50,978 [INFO] BDD scenario screenshot saved: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\utils\..\logs\Apply_nonstop_filter_passed_20260522_003250.png
+2026-05-22 00:32:50,983 [INFO] Starting scenario: Sort by price
+2026-05-22 00:32:50,986 [INFO] Sorting by Price (Low to High)...
+2026-05-22 00:32:51,084 [INFO] Sorted by Price.
+2026-05-22 00:32:51,200 [INFO] Dismissing results-page popup...
+2026-05-22 00:32:52,676 [INFO] BDD scenario screenshot saved: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\utils\..\logs\Sort_by_price_passed_20260522_003252.png
+2026-05-22 00:32:52,681 [INFO] Starting scenario: Print results
+2026-05-22 00:32:52,683 [INFO] ============================================================
+2026-05-22 00:32:55,121 [INFO] 58 Flights Available
+2026-05-22 00:32:55,396 [INFO] 
+--- Flight 1 ---
+2026-05-22 00:32:55,396 [INFO]   ₹6,760
+2026-05-22 00:32:55,397 [INFO]   Extra ₹225 Off
+2026-05-22 00:32:55,397 [INFO]   Book
+2026-05-22 00:32:55,398 [INFO] 
+--- Flight 2 ---
+2026-05-22 00:32:55,398 [INFO]   2nd Fastest
+2026-05-22 00:32:55,398 [INFO]   IndiGo
+2026-05-22 00:32:55,398 [INFO]   6E5096
+2026-05-22 00:32:55,399 [INFO]   17:00
+2026-05-22 00:32:55,399 [INFO]   HDO
+2026-05-22 00:32:55,399 [INFO]   2h 5m
+2026-05-22 00:32:55,399 [INFO]   Non-stop
+2026-05-22 00:32:55,400 [INFO]   19:05
+2026-05-22 00:32:55,400 [INFO] 
+--- Flight 3 ---
+2026-05-22 00:32:55,400 [INFO]   ₹7,068
+2026-05-22 00:32:55,400 [INFO]   Extra ₹255 Off
+2026-05-22 00:32:55,401 [INFO]   Book
+2026-05-22 00:32:55,401 [INFO] 
+--- Flight 4 ---
+2026-05-22 00:32:55,401 [INFO]   Akasa Air
+2026-05-22 00:32:55,401 [INFO]   QP1128
+2026-05-22 00:32:55,403 [INFO]   16:00
+2026-05-22 00:32:55,403 [INFO]   DEL
+2026-05-22 00:32:55,405 [INFO]   2h 20m
+2026-05-22 00:32:55,406 [INFO]   Non-stop
+2026-05-22 00:32:55,406 [INFO]   18:20
+2026-05-22 00:32:55,406 [INFO]   BOM
+2026-05-22 00:32:55,406 [INFO] 
+--- Flight 5 ---
+2026-05-22 00:32:55,407 [INFO]   Akasa Air
+2026-05-22 00:32:55,407 [INFO]   QP1820
+2026-05-22 00:32:55,407 [INFO]   17:30
+2026-05-22 00:32:55,407 [INFO]   DEL
+2026-05-22 00:32:55,408 [INFO]   2h 20m
+2026-05-22 00:32:55,408 [INFO]   Non-stop
+2026-05-22 00:32:55,408 [INFO]   19:50
+2026-05-22 00:32:55,408 [INFO]   BOM
+2026-05-22 00:32:55,409 [INFO] ============================================================
+2026-05-22 00:32:56,028 [INFO] BDD scenario screenshot saved: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\utils\..\logs\Print_results_passed_20260522_003255.png
+2026-05-22 00:32:56,031 [INFO] Starting scenario: Click book
+2026-05-22 00:32:56,032 [INFO] Clicking Book on flight #1...
+2026-05-22 00:32:56,332 [INFO] Book clicked — proceeding to traveller details.
+2026-05-22 00:32:57,475 [INFO] BDD scenario screenshot saved: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\utils\..\logs\Click_book_passed_20260522_003257.png
+2026-05-22 00:32:57,479 [INFO] Starting scenario: Booking page
+2026-05-22 00:32:57,480 [INFO] Waiting for booking/traveller details page...
+2026-05-22 00:32:57,509 [INFO] Booking page loaded.
+2026-05-22 00:32:58,305 [INFO] BDD scenario screenshot saved: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\utils\..\logs\Booking_page_passed_20260522_003257.png
+2026-05-22 00:32:58,309 [INFO] Starting scenario: Decline cancellation
+2026-05-22 00:32:58,310 [INFO] Selecting 'I don't want Free Cancellation'...
+2026-05-22 00:33:05,610 [INFO] Declined Free Cancellation.
+2026-05-22 00:33:06,303 [INFO] BDD scenario screenshot saved: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\utils\..\logs\Decline_cancellation_passed_20260522_003305.png
+2026-05-22 00:33:06,316 [INFO] Starting scenario: Fill traveller
+2026-05-22 00:33:06,317 [INFO] Filling traveller form from CSV data...
+2026-05-22 00:33:06,317 [INFO] Deselecting any pre-selected saved travellers...
+2026-05-22 00:33:08,330 [INFO] Expanding traveller form...
+2026-05-22 00:33:12,923 [INFO] Expanded traveller form.
+2026-05-22 00:33:12,924 [INFO] Selecting title: Mr
+2026-05-22 00:33:12,960 [INFO] Found 'Title' via: //*[normalize-space()='Title']/following-sibling::input
+2026-05-22 00:33:13,880 [INFO] Title 'Mr' selected from dropdown.
+2026-05-22 00:33:13,881 [INFO] Filling 'First': Rahul Kumar
+2026-05-22 00:33:13,912 [INFO] Found 'First' via: //*[contains(text(),'First')]/following-sibling::input
+2026-05-22 00:33:14,794 [INFO] Filling 'Last Name': Sharma
+2026-05-22 00:33:14,823 [INFO] Found 'Last Name' via: //*[normalize-space()='Last Name']/following-sibling::input
+2026-05-22 00:33:15,573 [INFO] Filling 'Mobile Number': 9876543210
+2026-05-22 00:33:15,611 [INFO] Found 'Mobile Number' via: //*[normalize-space()='Mobile Number']/following-sibling::input
+2026-05-22 00:33:16,525 [INFO] Filling 'Email': rahul.sharma@example.com
+2026-05-22 00:33:16,558 [INFO] Found 'Email' via: //*[normalize-space()='Email']/following-sibling::input
+2026-05-22 00:33:17,875 [INFO] Found 'Pincode' via: //*[normalize-space()='Pincode']/following-sibling::input
+2026-05-22 00:33:17,876 [INFO] Filling 'Pincode': 560001
+2026-05-22 00:33:17,910 [INFO] Found 'Pincode' via: //*[normalize-space()='Pincode']/following-sibling::input
+2026-05-22 00:33:18,629 [INFO] Found 'Address' via: //*[normalize-space()='Address']/following-sibling::input
+2026-05-22 00:33:18,629 [INFO] Filling 'Address': 42 MG Road Bengaluru
+2026-05-22 00:33:18,656 [INFO] Found 'Address' via: //*[normalize-space()='Address']/following-sibling::input
+2026-05-22 00:33:19,791 [INFO] Traveller form filled successfully (all fields).
+2026-05-22 00:33:20,368 [INFO] BDD scenario screenshot saved: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\utils\..\logs\Fill_traveller_passed_20260522_003320.png
+2026-05-22 00:33:20,372 [INFO] Starting scenario: Continue and confirm
+2026-05-22 00:33:20,372 [INFO] Clicking Continue...
+2026-05-22 00:33:20,876 [INFO] Continue clicked.
+2026-05-22 00:33:20,877 [INFO] Looking for Confirm button on review dialog...
+2026-05-22 00:33:21,578 [INFO] Confirm clicked.
+2026-05-22 00:33:21,853 [INFO] Checking for upsell popup...
+2026-05-22 00:33:22,551 [INFO] Upsell popup dismissed (No, Thanks).
+2026-05-22 00:33:22,944 [INFO] BDD scenario screenshot saved: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\utils\..\logs\Continue_and_confirm_passed_20260522_003322.png
+2026-05-22 00:33:22,948 [INFO] Starting scenario: Add-ons page
+2026-05-22 00:33:22,948 [INFO] Waiting for Add-ons page to load...
+2026-05-22 00:33:24,563 [INFO] Add-ons page loaded.
+2026-05-22 00:33:25,354 [INFO] BDD scenario screenshot saved: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\utils\..\logs\Add-ons_page_passed_20260522_003325.png
+2026-05-22 00:33:25,360 [INFO] Starting scenario: Select seat
+2026-05-22 00:33:25,362 [INFO] Attempting to select a seat...
+2026-05-22 00:33:37,539 [WARNING] Seat map did not load.
+2026-05-22 00:33:38,197 [INFO] BDD scenario screenshot saved: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\utils\..\logs\Select_seat_passed_20260522_003337.png
+2026-05-22 00:33:38,200 [INFO] Starting scenario: Skip to payment
+2026-05-22 00:33:38,201 [INFO] Clicking Skip to Payment...
+2026-05-22 00:33:42,547 [INFO] Skipped to payment.
+2026-05-22 00:33:43,207 [INFO] BDD scenario screenshot saved: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\utils\..\logs\Skip_to_payment_passed_20260522_003342.png
+2026-05-22 00:33:43,216 [INFO] Starting scenario: Payment page
+2026-05-22 00:33:43,217 [INFO] Waiting for Payment page...
+2026-05-22 00:33:43,304 [INFO] Payment page reached. URL: https://www.ixigo.com/payments/view/home/1/01KS5YR16Z2MQ6A7WNRE5924TQ65S1Y0RK1?showHeader=true&tripId=IF26052145397032&providerId=1058&productType=FLIGHT&isr=false&juspaySDK=01KS5YR16ZH4SKVEWZBZ0HWWJZ0Y1RSK615
+2026-05-22 00:33:43,976 [INFO] BDD scenario screenshot saved: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\utils\..\logs\Payment_page_passed_20260522_003343.png
+2026-05-22 00:33:43,978 [INFO] Closing browser after feature: Ixigo full end-to-end booking
+2026-05-22 00:33:46,656 [INFO] BDD suite finished.
+2026-05-22 00:33:46,658 [INFO] Allure report will open shortly. Logs: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\reports\allure-command-*.log
+2026-05-23 00:05:40,476 [INFO] BDD suite started.
+2026-05-23 00:05:40,479 [INFO] Starting feature: Ixigo combined flow
+2026-05-23 00:05:43,580 [INFO] Browser started: MicrosoftEdge
+2026-05-23 00:05:43,581 [INFO] Opening https://www.ixigo.com/flights
+2026-05-23 00:05:52,630 [INFO] Sale banner closed.
+2026-05-23 00:05:52,700 [INFO] Starting scenario: Same source and destination should not navigate to results
+2026-05-23 00:05:53,542 [INFO] Browser started: MicrosoftEdge
+2026-05-23 00:05:53,542 [INFO] Opening https://www.ixigo.com/flights
+2026-05-23 00:06:02,440 [INFO] Sale banner closed.
+2026-05-23 00:06:02,503 [INFO] Opening https://www.ixigo.com/flights
+2026-05-23 00:06:10,081 [INFO] Sale banner closed.
+2026-05-23 00:06:10,132 [INFO] Waiting for search form to be interactive...
+2026-05-23 00:06:10,177 [INFO] Search form is ready.
+2026-05-23 00:06:10,178 [INFO] Selecting From: Mumbai (BOM)
+2026-05-23 00:06:15,826 [INFO] Selected BOM from dropdown.
+2026-05-23 00:06:15,827 [INFO] Selecting To: Mumbai (BOM)
+2026-05-23 00:06:21,438 [INFO] Selected BOM from dropdown.
+2026-05-23 00:06:21,438 [INFO] Selecting date: 4 June 2026
+2026-05-23 00:06:29,096 [INFO] Selected date (abbr fallback): June 4, 2026
+2026-05-23 00:06:29,097 [INFO] Clicking Search...
+2026-05-23 00:06:36,168 [INFO] Sale banner closed.
+2026-05-23 00:06:36,352 [INFO] Search clicked.
+2026-05-23 00:06:40,165 [INFO] BDD scenario screenshot saved: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\utils\..\logs\Same_source_and_destination_should_not_navigate_to_results_passed_20260523_000639.png
+2026-05-23 00:06:40,165 [INFO] Closing isolated browser after scenario: Same source and destination should not navigate to results
+2026-05-23 00:06:42,543 [INFO] Starting scenario: Search without destination should not navigate to results
+2026-05-23 00:06:43,459 [INFO] Browser started: MicrosoftEdge
+2026-05-23 00:06:43,460 [INFO] Opening https://www.ixigo.com/flights
+2026-05-23 00:06:52,323 [INFO] Sale banner closed.
+2026-05-23 00:06:52,399 [INFO] Opening https://www.ixigo.com/flights
+2026-05-23 00:06:59,984 [INFO] Sale banner closed.
+2026-05-23 00:07:00,098 [INFO] Waiting for search form to be interactive...
+2026-05-23 00:07:00,147 [INFO] Search form is ready.
+2026-05-23 00:07:00,147 [INFO] Selecting From: Mumbai (BOM)
+2026-05-23 00:07:05,995 [INFO] Selected BOM from dropdown.
+2026-05-23 00:07:05,995 [INFO] Clicking Search...
+2026-05-23 00:07:13,087 [INFO] Sale banner closed.
+2026-05-23 00:07:13,218 [INFO] Search clicked.
+2026-05-23 00:07:17,998 [INFO] BDD scenario screenshot saved: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\utils\..\logs\Search_without_destination_should_not_navigate_to_results_passed_20260523_000717.png
+2026-05-23 00:07:17,998 [INFO] Closing isolated browser after scenario: Search without destination should not navigate to results
+2026-05-23 00:07:20,847 [INFO] Closing browser after feature: Ixigo combined flow
+2026-05-23 00:07:23,391 [INFO] BDD suite finished.
+2026-05-23 00:07:23,392 [INFO] Reports will open shortly. HTML works without extra tools; Allure opens when Allure commandline is installed. Logs: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\reports\allure-command-*.log
+2026-05-23 00:07:42,466 [INFO] BDD suite started.
+2026-05-23 00:07:42,471 [INFO] Starting feature: Ixigo combined flow
+2026-05-23 00:07:43,587 [INFO] Browser started: MicrosoftEdge
+2026-05-23 00:07:43,588 [INFO] Opening https://www.ixigo.com/flights
+2026-05-23 00:07:53,686 [INFO] Sale banner closed.
+2026-05-23 00:07:53,757 [INFO] Starting scenario: Open ixigo page
+2026-05-23 00:07:53,758 [INFO] Opening https://www.ixigo.com/flights
+2026-05-23 00:08:01,355 [INFO] Sale banner closed.
+2026-05-23 00:08:01,709 [INFO] BDD scenario screenshot saved: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\utils\..\logs\Open_ixigo_page_passed_20260523_000801.png
+2026-05-23 00:08:01,744 [INFO] Starting scenario: Page elements are present
+2026-05-23 00:08:02,102 [INFO] BDD scenario screenshot saved: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\utils\..\logs\Page_elements_are_present_passed_20260523_000801.png
+2026-05-23 00:08:02,104 [INFO] Starting scenario: Search BOM to BLR flights
+2026-05-23 00:08:02,104 [INFO] Opening https://www.ixigo.com/flights
+2026-05-23 00:08:09,899 [INFO] Sale banner closed.
+2026-05-23 00:08:09,950 [INFO] Waiting for search form to be interactive...
+2026-05-23 00:08:09,987 [INFO] Search form is ready.
+2026-05-23 00:08:09,987 [INFO] Selecting From: Mumbai (BOM)
+2026-05-23 00:08:16,171 [INFO] Selected BOM from dropdown.
+2026-05-23 00:08:16,171 [INFO] Selecting To: Bengaluru (BLR)
+2026-05-23 00:08:21,994 [INFO] Selected BLR from dropdown.
+2026-05-23 00:08:21,996 [INFO] Selecting date: 10 June 2026
+2026-05-23 00:08:22,589 [INFO] Selected date: June 10, 2026
+2026-05-23 00:08:22,589 [INFO] Clicking Search...
+2026-05-23 00:08:29,655 [INFO] Sale banner closed.
+2026-05-23 00:08:29,893 [INFO] Search clicked.
+2026-05-23 00:08:33,282 [INFO] Waiting for flight results...
+2026-05-23 00:08:33,394 [INFO] Results loaded.
+2026-05-23 00:08:33,395 [INFO] Dismissing results-page popup...
+2026-05-23 00:08:34,217 [INFO] BDD scenario screenshot saved: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\utils\..\logs\Search_BOM_to_BLR_flights_passed_20260523_000833.png
+2026-05-23 00:08:34,220 [INFO] Starting scenario: Flight count and book buttons are visible
+2026-05-23 00:08:34,673 [INFO] BDD scenario screenshot saved: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\utils\..\logs\Flight_count_and_book_buttons_are_visible_passed_20260523_000834.png
+2026-05-23 00:08:34,675 [INFO] Starting scenario: Apply nonstop filter and sort by price
+2026-05-23 00:08:34,675 [INFO] Applying Non-Stop filter...
+2026-05-23 00:08:34,723 [INFO] Non-Stop filter applied.
+2026-05-23 00:08:35,045 [INFO] Sorting by Price (Low to High)...
+2026-05-23 00:08:35,093 [INFO] Sorted by Price.
+2026-05-23 00:08:35,126 [INFO] Dismissing results-page popup...
+2026-05-23 00:08:36,242 [INFO] BDD scenario screenshot saved: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\utils\..\logs\Apply_nonstop_filter_and_sort_by_price_passed_20260523_000835.png
+2026-05-23 00:08:36,244 [INFO] Starting scenario: Print flight results
+2026-05-23 00:08:36,245 [INFO] ============================================================
+2026-05-23 00:08:37,516 [INFO] 37 Flights Available
+2026-05-23 00:08:37,639 [INFO] 
+--- Flight 1 ---
+2026-05-23 00:08:37,639 [INFO]   ₹5,058
+2026-05-23 00:08:37,639 [INFO]   Extra ₹630 Off
+2026-05-23 00:08:37,639 [INFO]   Book
+2026-05-23 00:08:37,639 [INFO] 
+--- Flight 2 ---
+2026-05-23 00:08:37,639 [INFO]   Recommended
+2026-05-23 00:08:37,639 [INFO]   Akasa Air
+2026-05-23 00:08:37,639 [INFO]   QP2001
+2026-05-23 00:08:37,639 [INFO]   07:15
+2026-05-23 00:08:37,639 [INFO]   NMI
+2026-05-23 00:08:37,639 [INFO]   1h 45m
+2026-05-23 00:08:37,640 [INFO]   Non-stop
+2026-05-23 00:08:37,640 [INFO]   09:00
+2026-05-23 00:08:37,640 [INFO] 
+--- Flight 3 ---
+2026-05-23 00:08:37,641 [INFO]   ₹5,308
+2026-05-23 00:08:37,641 [INFO]   Extra ₹430 Off
+2026-05-23 00:08:37,641 [INFO]   Book
+2026-05-23 00:08:37,641 [INFO] 
+--- Flight 4 ---
+2026-05-23 00:08:37,641 [INFO]   Akasa Air
+2026-05-23 00:08:37,641 [INFO]   QP1518
+2026-05-23 00:08:37,641 [INFO]   21:45
+2026-05-23 00:08:37,641 [INFO]   BOM
+2026-05-23 00:08:37,641 [INFO]   1h 50m
+2026-05-23 00:08:37,641 [INFO]   Non-stop
+2026-05-23 00:08:37,643 [INFO]   23:35
+2026-05-23 00:08:37,643 [INFO]   BLR
+2026-05-23 00:08:37,643 [INFO] 
+--- Flight 5 ---
+2026-05-23 00:08:37,643 [INFO]   ₹5,525
+2026-05-23 00:08:37,643 [INFO]   Extra ₹640 Off
+2026-05-23 00:08:37,643 [INFO]   Book
+2026-05-23 00:08:37,643 [INFO] ============================================================
+2026-05-23 00:08:38,082 [INFO] BDD scenario screenshot saved: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\utils\..\logs\Print_flight_results_passed_20260523_000837.png
+2026-05-23 00:08:38,085 [INFO] Starting scenario: Same source and destination should not navigate to results
+2026-05-23 00:08:39,045 [INFO] Browser started: MicrosoftEdge
+2026-05-23 00:08:39,046 [INFO] Opening https://www.ixigo.com/flights
+2026-05-23 00:08:47,999 [INFO] Sale banner closed.
+2026-05-23 00:08:48,060 [INFO] Opening https://www.ixigo.com/flights
+2026-05-23 00:08:55,670 [INFO] Sale banner closed.
+2026-05-23 00:08:55,718 [INFO] Waiting for search form to be interactive...
+2026-05-23 00:08:55,755 [INFO] Search form is ready.
+2026-05-23 00:08:55,755 [INFO] Selecting From: Mumbai (BOM)
+2026-05-23 00:09:01,372 [INFO] Selected BOM from dropdown.
+2026-05-23 00:09:01,372 [INFO] Selecting To: Mumbai (BOM)
+2026-05-23 00:09:06,964 [INFO] Selected BOM from dropdown.
+2026-05-23 00:09:06,964 [INFO] Selecting date: 4 June 2026
+2026-05-23 00:09:14,562 [INFO] Selected date (abbr fallback): June 4, 2026
+2026-05-23 00:09:14,562 [INFO] Clicking Search...
+2026-05-23 00:09:21,673 [INFO] Sale banner closed.
+2026-05-23 00:09:21,859 [INFO] Search clicked.
+2026-05-23 00:09:25,563 [INFO] BDD scenario screenshot saved: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\utils\..\logs\Same_source_and_destination_should_not_navigate_to_results_passed_20260523_000925.png
+2026-05-23 00:09:25,563 [INFO] Closing isolated browser after scenario: Same source and destination should not navigate to results
+2026-05-23 00:09:28,035 [INFO] Starting scenario: Search without destination should not navigate to results
+2026-05-23 00:09:28,915 [INFO] Browser started: MicrosoftEdge
+2026-05-23 00:09:28,916 [INFO] Opening https://www.ixigo.com/flights
+2026-05-23 00:09:38,660 [INFO] Sale banner closed.
+2026-05-23 00:09:38,727 [INFO] Opening https://www.ixigo.com/flights
+2026-05-23 00:09:46,342 [INFO] Sale banner closed.
+2026-05-23 00:09:46,391 [INFO] Waiting for search form to be interactive...
+2026-05-23 00:09:46,433 [INFO] Search form is ready.
+2026-05-23 00:09:46,434 [INFO] Selecting From: Mumbai (BOM)
+2026-05-23 00:09:52,061 [INFO] Selected BOM from dropdown.
+2026-05-23 00:09:52,061 [INFO] Clicking Search...
+2026-05-23 00:09:59,118 [INFO] Sale banner closed.
+2026-05-23 00:09:59,278 [INFO] Search clicked.
+2026-05-23 00:10:03,653 [INFO] BDD scenario screenshot saved: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\utils\..\logs\Search_without_destination_should_not_navigate_to_results_passed_20260523_001003.png
+2026-05-23 00:10:03,653 [INFO] Closing isolated browser after scenario: Search without destination should not navigate to results
+2026-05-23 00:10:06,112 [INFO] Starting scenario: Booking flow reaches traveller details
+2026-05-23 00:10:06,973 [INFO] Browser started: MicrosoftEdge
+2026-05-23 00:10:06,974 [INFO] Opening https://www.ixigo.com/flights
+2026-05-23 00:10:15,854 [INFO] Sale banner closed.
+2026-05-23 00:10:15,940 [INFO] Opening https://www.ixigo.com/flights
+2026-05-23 00:10:23,690 [INFO] Sale banner closed.
+2026-05-23 00:10:23,757 [INFO] Waiting for search form to be interactive...
+2026-05-23 00:10:23,824 [INFO] Search form is ready.
+2026-05-23 00:10:23,824 [INFO] Selecting From: Mumbai (BOM)
+2026-05-23 00:10:29,670 [INFO] Selected BOM from dropdown.
+2026-05-23 00:10:29,671 [INFO] Selecting To: Bengaluru (BLR)
+2026-05-23 00:10:35,512 [INFO] Selected BLR from dropdown.
+2026-05-23 00:10:35,513 [INFO] Selecting date: 4 June 2026
+2026-05-23 00:10:43,435 [INFO] Selected date (abbr fallback): June 4, 2026
+2026-05-23 00:10:43,435 [INFO] Clicking Search...
+2026-05-23 00:10:50,560 [INFO] Sale banner closed.
+2026-05-23 00:10:50,711 [INFO] Search clicked.
+2026-05-23 00:10:54,180 [INFO] Waiting for flight results...
+2026-05-23 00:10:54,243 [INFO] Results loaded.
+2026-05-23 00:10:54,244 [INFO] Dismissing results-page popup...
+2026-05-23 00:10:54,585 [INFO] Applying Non-Stop filter...
+2026-05-23 00:11:02,590 [INFO] Non-Stop filter applied.
+2026-05-23 00:11:02,950 [INFO] Sorting by Price (Low to High)...
+2026-05-23 00:11:02,987 [INFO] Sorted by Price.
+2026-05-23 00:11:03,013 [INFO] Dismissing results-page popup...
+2026-05-23 00:11:03,739 [INFO] Clicking Book on flight #1...
+2026-05-23 00:11:03,923 [INFO] Book clicked — proceeding to traveller details.
+2026-05-23 00:11:04,627 [INFO] Waiting for booking/traveller details page...
+2026-05-23 00:11:04,631 [INFO] Booking page loaded.
+2026-05-23 00:11:04,654 [INFO] Selecting 'I don't want Free Cancellation'...
+2026-05-23 00:11:12,350 [INFO] Declined Free Cancellation.
+2026-05-23 00:11:12,693 [INFO] Waiting for booking/traveller details page...
+2026-05-23 00:11:12,697 [INFO] Booking page loaded.
+2026-05-23 00:11:13,023 [INFO] BDD scenario screenshot saved: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\utils\..\logs\Booking_flow_reaches_traveller_details_passed_20260523_001112.png
+2026-05-23 00:11:13,023 [INFO] Closing isolated browser after scenario: Booking flow reaches traveller details
+2026-05-23 00:11:15,540 [INFO] Closing browser after feature: Ixigo combined flow
+2026-05-23 00:11:18,017 [INFO] Starting feature: Ixigo full end-to-end booking
+2026-05-23 00:11:19,047 [INFO] Browser started: MicrosoftEdge
+2026-05-23 00:11:19,047 [INFO] Opening https://www.ixigo.com/flights
+2026-05-23 00:11:27,872 [INFO] Sale banner closed.
+2026-05-23 00:11:27,974 [INFO] Starting scenario: Open site
+2026-05-23 00:11:27,975 [INFO] Opening https://www.ixigo.com/flights
+2026-05-23 00:11:35,680 [INFO] Sale banner closed.
+2026-05-23 00:11:36,155 [INFO] BDD scenario screenshot saved: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\utils\..\logs\Open_site_passed_20260523_001135.png
+2026-05-23 00:11:36,160 [INFO] Starting scenario: Login
+2026-05-23 00:11:36,161 [INFO] Clicking Log in/Sign up...
+2026-05-23 00:11:36,295 [INFO] Login dialog opened.
+2026-05-23 00:11:37,179 [INFO] Mobile number submitted; waiting for OTP.
+2026-05-23 00:11:37,179 [INFO] Waiting up to 300s for manual OTP entry...
+2026-05-23 00:11:59,511 [INFO] Login completed!
+2026-05-23 00:12:00,125 [INFO] BDD scenario screenshot saved: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\utils\..\logs\Login_passed_20260523_001159.png
+2026-05-23 00:12:00,129 [INFO] Starting scenario: Search flights
+2026-05-23 00:12:00,130 [INFO] Opening https://www.ixigo.com/flights
+2026-05-23 00:12:08,042 [INFO] Sale banner closed.
+2026-05-23 00:12:08,126 [INFO] Waiting for search form to be interactive...
+2026-05-23 00:12:08,193 [INFO] Search form is ready.
+2026-05-23 00:12:08,193 [INFO] Selecting From: Delhi (DEL)
+2026-05-23 00:12:14,312 [INFO] Selected DEL from dropdown.
+2026-05-23 00:12:14,313 [INFO] Selecting To: Mumbai (BOM)
+2026-05-23 00:12:20,308 [INFO] Selected BOM from dropdown.
+2026-05-23 00:12:20,309 [INFO] Selecting date: 15 June 2026
+2026-05-23 00:12:20,757 [INFO] Selected date: June 15, 2026
+2026-05-23 00:12:20,757 [INFO] Clicking Search...
+2026-05-23 00:12:27,828 [INFO] Sale banner closed.
+2026-05-23 00:12:28,045 [INFO] Search clicked.
+2026-05-23 00:12:28,430 [INFO] Waiting for flight results...
+2026-05-23 00:12:30,523 [INFO] Results loaded.
+2026-05-23 00:12:30,525 [INFO] Dismissing results-page popup...
+2026-05-23 00:12:31,541 [INFO] BDD scenario screenshot saved: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\utils\..\logs\Search_flights_passed_20260523_001231.png
+2026-05-23 00:12:31,544 [INFO] Starting scenario: Apply nonstop filter
+2026-05-23 00:12:31,545 [INFO] Applying Non-Stop filter...
+2026-05-23 00:12:35,401 [INFO] Non-Stop filter applied.
+2026-05-23 00:12:36,187 [INFO] BDD scenario screenshot saved: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\utils\..\logs\Apply_nonstop_filter_passed_20260523_001235.png
+2026-05-23 00:12:36,189 [INFO] Starting scenario: Sort by price
+2026-05-23 00:12:36,189 [INFO] Sorting by Price (Low to High)...
+2026-05-23 00:12:36,228 [INFO] Sorted by Price.
+2026-05-23 00:12:36,263 [INFO] Dismissing results-page popup...
+2026-05-23 00:12:37,381 [INFO] BDD scenario screenshot saved: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\utils\..\logs\Sort_by_price_passed_20260523_001237.png
+2026-05-23 00:12:37,384 [INFO] Starting scenario: Print results
+2026-05-23 00:12:37,384 [INFO] ============================================================
+2026-05-23 00:12:38,758 [INFO] 59 Flights Available
+2026-05-23 00:12:38,902 [INFO] 
+--- Flight 1 ---
+2026-05-23 00:12:38,902 [INFO]   ₹6,760
+2026-05-23 00:12:38,902 [INFO]   Extra ₹225 Off
+2026-05-23 00:12:38,903 [INFO]   Book
+2026-05-23 00:12:38,903 [INFO] 
+--- Flight 2 ---
+2026-05-23 00:12:38,903 [INFO]   2nd Fastest
+2026-05-23 00:12:38,903 [INFO]   IndiGo
+2026-05-23 00:12:38,903 [INFO]   6E5096
+2026-05-23 00:12:38,903 [INFO]   17:00
+2026-05-23 00:12:38,903 [INFO]   HDO
+2026-05-23 00:12:38,904 [INFO]   2h 5m
+2026-05-23 00:12:38,904 [INFO]   Non-stop
+2026-05-23 00:12:38,904 [INFO]   19:05
+2026-05-23 00:12:38,905 [INFO] 
+--- Flight 3 ---
+2026-05-23 00:12:38,905 [INFO]   ₹7,068
+2026-05-23 00:12:38,907 [INFO]   Extra ₹255 Off
+2026-05-23 00:12:38,907 [INFO]   Book
+2026-05-23 00:12:38,907 [INFO] 
+--- Flight 4 ---
+2026-05-23 00:12:38,908 [INFO]   Akasa Air
+2026-05-23 00:12:38,908 [INFO]   QP1128
+2026-05-23 00:12:38,908 [INFO]   16:00
+2026-05-23 00:12:38,908 [INFO]   DEL
+2026-05-23 00:12:38,909 [INFO]   2h 20m
+2026-05-23 00:12:38,909 [INFO]   Non-stop
+2026-05-23 00:12:38,910 [INFO]   18:20
+2026-05-23 00:12:38,910 [INFO]   BOM
+2026-05-23 00:12:38,910 [INFO] 
+--- Flight 5 ---
+2026-05-23 00:12:38,910 [INFO]   ₹7,200
+2026-05-23 00:12:38,911 [INFO]   Extra ₹240 Off
+2026-05-23 00:12:38,911 [INFO]   Book
+2026-05-23 00:12:38,912 [INFO] ============================================================
+2026-05-23 00:12:39,355 [INFO] BDD scenario screenshot saved: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\utils\..\logs\Print_results_passed_20260523_001239.png
+2026-05-23 00:12:39,358 [INFO] Starting scenario: Click book
+2026-05-23 00:12:39,358 [INFO] Clicking Book on flight #1...
+2026-05-23 00:12:39,549 [INFO] Book clicked — proceeding to traveller details.
+2026-05-23 00:12:40,412 [INFO] BDD scenario screenshot saved: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\utils\..\logs\Click_book_passed_20260523_001240.png
+2026-05-23 00:12:40,414 [INFO] Starting scenario: Booking page
+2026-05-23 00:12:40,414 [INFO] Waiting for booking/traveller details page...
+2026-05-23 00:12:40,419 [INFO] Booking page loaded.
+2026-05-23 00:12:40,639 [INFO] BDD scenario screenshot saved: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\utils\..\logs\Booking_page_passed_20260523_001240.png
+2026-05-23 00:12:40,642 [INFO] Starting scenario: Decline cancellation
+2026-05-23 00:12:40,643 [INFO] Selecting 'I don't want Free Cancellation'...
+2026-05-23 00:12:47,792 [INFO] Declined Free Cancellation.
+2026-05-23 00:12:48,258 [INFO] BDD scenario screenshot saved: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\utils\..\logs\Decline_cancellation_passed_20260523_001248.png
+2026-05-23 00:12:48,262 [INFO] Starting scenario: Fill traveller
+2026-05-23 00:12:48,270 [INFO] Filling traveller form from CSV data...
+2026-05-23 00:12:48,270 [INFO] Deselecting any pre-selected saved travellers...
+2026-05-23 00:12:50,282 [INFO] Expanding traveller form...
+2026-05-23 00:12:54,997 [INFO] Expanded traveller form.
+2026-05-23 00:12:54,998 [INFO] Selecting title: Mr
+2026-05-23 00:12:55,043 [INFO] Found 'Title' via: //*[normalize-space()='Title']/following-sibling::input
+2026-05-23 00:12:55,894 [INFO] Title 'Mr' selected from dropdown.
+2026-05-23 00:12:55,894 [INFO] Filling 'First': Rahul Kumar
+2026-05-23 00:12:55,930 [INFO] Found 'First' via: //*[contains(text(),'First')]/following-sibling::input
+2026-05-23 00:12:56,463 [INFO] Filling 'Last Name': Sharma
+2026-05-23 00:12:56,504 [INFO] Found 'Last Name' via: //*[normalize-space()='Last Name']/following-sibling::input
+2026-05-23 00:12:57,014 [INFO] Filling 'Mobile Number': 9876543210
+2026-05-23 00:12:57,046 [INFO] Found 'Mobile Number' via: //*[normalize-space()='Mobile Number']/following-sibling::input
+2026-05-23 00:12:57,495 [INFO] Filling 'Email': rahul.sharma@example.com
+2026-05-23 00:12:57,519 [INFO] Found 'Email' via: //*[normalize-space()='Email']/following-sibling::input
+2026-05-23 00:12:57,991 [INFO] Found 'Pincode' via: //*[normalize-space()='Pincode']/following-sibling::input
+2026-05-23 00:12:57,993 [INFO] Filling 'Pincode': 560001
+2026-05-23 00:12:58,012 [INFO] Found 'Pincode' via: //*[normalize-space()='Pincode']/following-sibling::input
+2026-05-23 00:12:58,406 [INFO] Found 'Address' via: //*[normalize-space()='Address']/following-sibling::input
+2026-05-23 00:12:58,407 [INFO] Filling 'Address': 42 MG Road Bengaluru
+2026-05-23 00:12:58,425 [INFO] Found 'Address' via: //*[normalize-space()='Address']/following-sibling::input
+2026-05-23 00:12:58,838 [INFO] Traveller form filled successfully (all fields).
+2026-05-23 00:12:59,272 [INFO] BDD scenario screenshot saved: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\utils\..\logs\Fill_traveller_passed_20260523_001259.png
+2026-05-23 00:12:59,275 [INFO] Starting scenario: Continue and confirm
+2026-05-23 00:12:59,275 [INFO] Clicking Continue...
+2026-05-23 00:12:59,587 [INFO] Continue clicked.
+2026-05-23 00:12:59,587 [INFO] Looking for Confirm button on review dialog...
+2026-05-23 00:13:00,198 [INFO] Confirm clicked.
+2026-05-23 00:13:00,424 [INFO] Checking for upsell popup...
+2026-05-23 00:13:01,053 [INFO] Upsell popup dismissed (No, Thanks).
+2026-05-23 00:13:01,229 [INFO] BDD scenario screenshot saved: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\utils\..\logs\Continue_and_confirm_passed_20260523_001301.png
+2026-05-23 00:13:01,231 [INFO] Starting scenario: Add-ons page
+2026-05-23 00:13:01,231 [INFO] Waiting for Add-ons page to load...
+2026-05-23 00:13:02,602 [INFO] Add-ons page loaded.
+2026-05-23 00:13:03,185 [INFO] BDD scenario screenshot saved: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\utils\..\logs\Add-ons_page_passed_20260523_001302.png
+2026-05-23 00:13:03,187 [INFO] Starting scenario: Select seat
+2026-05-23 00:13:03,187 [INFO] Attempting to select a seat...
+2026-05-23 00:13:15,332 [WARNING] Seat map did not load.
+2026-05-23 00:13:15,953 [INFO] BDD scenario screenshot saved: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\utils\..\logs\Select_seat_passed_20260523_001315.png
+2026-05-23 00:13:15,958 [INFO] Starting scenario: Skip to payment
+2026-05-23 00:13:15,958 [INFO] Clicking Skip to Payment...
+2026-05-23 00:13:18,044 [INFO] Skipped to payment.
+2026-05-23 00:13:18,579 [INFO] BDD scenario screenshot saved: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\utils\..\logs\Skip_to_payment_passed_20260523_001318.png
+2026-05-23 00:13:18,581 [INFO] Starting scenario: Payment page
+2026-05-23 00:13:18,582 [INFO] Waiting for Payment page...
+2026-05-23 00:13:18,596 [INFO] Payment page reached. URL: https://www.ixigo.com/payments/view/home/1/01KS8FZDKBT6V3HPY3AKTNA5KCKDK1SFZ80?showHeader=true&tripId=IF26052245573517&providerId=1058&productType=FLIGHT&isr=false&juspaySDK=01KS8FZDKBNZ14MFVGHCF5KQHTKZS8FD0K1
+2026-05-23 00:13:19,131 [INFO] BDD scenario screenshot saved: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\utils\..\logs\Payment_page_passed_20260523_001318.png
+2026-05-23 00:13:19,133 [INFO] Closing browser after feature: Ixigo full end-to-end booking
+2026-05-23 00:13:21,674 [INFO] BDD suite finished.
+2026-05-23 00:13:21,675 [INFO] Reports will open shortly. HTML works without extra tools; Allure opens when Allure commandline is installed. Logs: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\reports\allure-command-*.log
