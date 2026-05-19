@@ -7,9 +7,9 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 
 from pages.basepage import BasePage
-from utils.logger import get_logger
+from utils.logger import LogGen
 
-log = get_logger()
+logger =LogGen.loggen()
 
 
 class AddonsPage(BasePage):
@@ -26,11 +26,11 @@ class AddonsPage(BasePage):
     # ── Wait for add-ons page ────────────────────────────────────────
     def wait_for_addons_page(self, timeout: int = 15):
         """Wait until the seat map / add-ons page loads."""
-        log.info("Waiting for Add-ons page to load...")
+        logger.info("Waiting for Add-ons page to load...")
 
         # Check if already on payment (some providers skip addons)
         if "payment" in self.driver.current_url.lower():
-            log.info("Skipped directly to payment — no addons page.")
+            logger.info("Skipped directly to payment — no addons page.")
             return
 
         try:
@@ -42,19 +42,19 @@ class AddonsPage(BasePage):
                     + " | " + self.SEAT_ICON_CLICKABLE_XPATH
                 ))
             )
-            log.info("Add-ons page loaded.")
+            logger.info("Add-ons page loaded.")
         except TimeoutException:
             # Maybe we went to payment already
             if "payment" in self.driver.current_url.lower():
-                log.info("Redirected to payment — no addons page.")
+                logger.info("Redirected to payment — no addons page.")
             else:
-                log.warning("Add-ons page did not load — no action button found.")
+                logger.warning("Add-ons page did not load — no action button found.")
 
     # ── Seat selection ───────────────────────────────────────────────
     def select_random_seat(self) -> bool:
         """Click the first available seat icon on the seat map.
         Returns True if a seat was selected, False otherwise."""
-        log.info("Attempting to select a seat...")
+        logger.info("Attempting to select a seat...")
         try:
             # Wait for seat icons to appear
             WebDriverWait(self.driver, 10).until(
@@ -64,7 +64,7 @@ class AddonsPage(BasePage):
             )
 
             seats = self.driver.find_elements(By.XPATH, self.SEAT_ICON_CLICKABLE_XPATH)
-            log.info(f"Found {len(seats)} seat icons on the map.")
+            logger.info(f"Found {len(seats)} seat icons on the map.")
 
             # Try to click seats from the middle of the plane (better seats)
             start_index = min(len(seats) // 3, 60)
@@ -87,28 +87,28 @@ class AddonsPage(BasePage):
                                  "contains(text(),'Aisle')]")
                             )
                         )
-                        log.info(f"Seat selected (icon index {i}).")
+                        logger.info(f"Seat selected (icon index {i}).")
                         return True
                     except TimeoutException:
                         continue
                 except Exception:
                     continue
 
-            log.warning("No available seat found after trying.")
+            logger.warning("No available seat found after trying.")
             return False
 
         except TimeoutException:
-            log.warning("Seat map did not load.")
+            logger.warning("Seat map did not load.")
             return False
 
     # ── Skip to Payment ──────────────────────────────────────────────
     def skip_to_payment(self):
         """Click the 'Skip to Payment' button — scroll into view first."""
-        log.info("Clicking Skip to Payment...")
+        logger.info("Clicking Skip to Payment...")
 
         # Check if already on payment page (some providers skip addons)
         if "payment" in self.driver.current_url.lower():
-            log.info("Already on payment page — skipping.")
+            logger.info("Already on payment page — skipping.")
             return
 
         try:
@@ -125,7 +125,7 @@ class AddonsPage(BasePage):
                 lambda d: "payment" in d.current_url.lower() or
                 "payment" in d.title.lower()
             )
-            log.info("Skipped to payment.")
+            logger.info("Skipped to payment.")
         except TimeoutException:
             # Fallback: some providers show "Continue" instead
             alt_xpaths = [
@@ -145,17 +145,17 @@ class AddonsPage(BasePage):
                         lambda d: "payment" in d.current_url.lower() or
                         "payment" in d.title.lower()
                     )
-                    log.info("Proceeded to payment (alt button).")
+                    logger.info("Proceeded to payment (alt button).")
                     return
                 except TimeoutException:
                     continue
 
             # Final check: maybe we already reached payment during the waits
             if "payment" in self.driver.current_url.lower():
-                log.info("Already on payment page.")
+                logger.info("Already on payment page.")
                 return
 
-            log.error("Skip to Payment button not found.")
+            logger.error("Skip to Payment button not found.")
             raise
 
     # ── Combined flow: try seat, then proceed ────────────────────────
@@ -163,8 +163,8 @@ class AddonsPage(BasePage):
         """Try to select a seat. If unavailable, skip to payment."""
         seat_selected = self.select_random_seat()
         if seat_selected:
-            log.info("Seat selected — now skipping to payment.")
+            logger.info("Seat selected — now skipping to payment.")
             self.skip_to_payment()
         else:
-            log.info("No seat selected — skipping to payment.")
+            logger.info("No seat selected — skipping to payment.")
             self.skip_to_payment()

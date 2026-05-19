@@ -7,9 +7,9 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 
 from pages.basepage import BasePage
-from utils.logger import get_logger
+from utils.logger import LogGen
 
-log = get_logger()
+logger =LogGen.loggen()
 
 
 class PaymentPage(BasePage):
@@ -19,7 +19,7 @@ class PaymentPage(BasePage):
     def wait_for_payment_page(self, timeout: int = 30) -> bool:
         """Wait until the payment page loads.
         Returns True if payment page is detected."""
-        log.info("Waiting for Payment page...")
+        logger.info("Waiting for Payment page...")
         try:
             WebDriverWait(self.driver, timeout).until(
                 lambda d: "payment" in d.current_url.lower()
@@ -30,10 +30,10 @@ class PaymentPage(BasePage):
                     " | //*[contains(text(),'Payment')]"
                 )) > 0
             )
-            log.info(f"Payment page reached. URL: {self.driver.current_url}")
+            logger.info(f"Payment page reached. URL: {self.driver.current_url}")
             return True
         except TimeoutException:
-            log.warning("Payment page did not load within timeout.")
+            logger.warning("Payment page did not load within timeout.")
             return False
 
     def is_on_payment_page(self) -> bool:

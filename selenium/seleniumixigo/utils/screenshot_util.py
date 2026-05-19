@@ -1,14 +1,50 @@
-"""Screenshot utility — saves screenshots to logs/ on failure."""
 import os
+import re
 from datetime import datetime
 
-_SCREENSHOT_DIR = os.path.join(os.path.dirname(__file__), "..", "logs")
-os.makedirs(_SCREENSHOT_DIR, exist_ok=True)
+import allure
+
+from utils.logger import LogGen
+
+logger = LogGen.loggen()
 
 
-def take_screenshot(driver, name: str = "screenshot") -> str:
-    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    filename = f"{name}_{timestamp}.png"
-    filepath = os.path.join(_SCREENSHOT_DIR, filename)
-    driver.save_screenshot(filepath)
-    return filepath
+def _clean_screenshot_name(name):
+    clean_name = re.sub(r"[^A-Za-z0-9_.-]+", "_", str(name)).strip("_")
+    return clean_name or "screenshot"
+
+
+class take_screenshot:
+
+    @staticmethod
+    def capture_screenshot(driver, screenshot_name="screenshot", name=None):
+        if name is not None:
+            screenshot_name = name
+
+        screenshot_dir = "reports/screenshots"
+
+        if not os.path.exists(screenshot_dir):
+            os.makedirs(screenshot_dir)
+
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S_%f")
+
+        clean_name = _clean_screenshot_name(screenshot_name)
+
+        screenshot_path = (
+            f"{screenshot_dir}/"
+            f"{clean_name}_{timestamp}.png"
+        )
+
+        if not driver.save_screenshot(screenshot_path):
+            raise RuntimeError(f"Screenshot was not saved: {screenshot_path}")
+
+        logger.info(f"Screenshot saved at: {screenshot_path}")
+
+        # attach screenshot to allure report
+        allure.attach.file(
+            screenshot_path,
+            name=clean_name,
+            attachment_type=allure.attachment_type.PNG
+        )
+
+        return screenshot_path

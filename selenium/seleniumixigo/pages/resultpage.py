@@ -3,6 +3,8 @@ ResultPage — handles the flight results page: wait for results, dismiss popups
 apply filters (Non-Stop), sort by price, extract flight data, and click Book.
 """
 
+import re
+
 from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.common.by import By
@@ -11,10 +13,9 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 
 from pages.basepage import BasePage
-from utils.logger import get_logger
+from utils.logger import LogGen
 
-log = get_logger()
-
+logger =LogGen.loggen()
 
 class ResultPage(BasePage):
     """Page Object for the ixigo flight search results page."""
@@ -27,13 +28,15 @@ class ResultPage(BasePage):
     )
     PRICE_RADIO_XPATH = "(//input[@type='radio' and @name='oneWayType'])[1]"
     FLIGHT_COUNT_XPATH = (
-        "//*[contains(text(),'Flights Available') or "
-        "contains(text(),'flights available')]"
+        "//*[contains("
+        "translate(normalize-space(.), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), "
+        "'flights available'"
+        ")]"
     )
 
     # ── Wait / navigation ───────────────────────────────────────────
     def wait_for_results(self, timeout: int = 30):
-        log.info("Waiting for flight results...")
+        logger.info("Waiting for flight results...")
         self.wait_for_url_contains("search/result/flight", timeout=timeout)
         WebDriverWait(self.driver, 15).until(
             EC.presence_of_element_located((By.XPATH, self.BOOK_BTN_XPATH))
@@ -42,11 +45,11 @@ class ResultPage(BasePage):
         WebDriverWait(self.driver, 10).until(
             EC.element_to_be_clickable((By.XPATH, self.BOOK_BTN_XPATH))
         )
-        log.info("Results loaded.")
+        logger.info("Results loaded.")
 
     # ── Popup dismissal on results page ─────────────────────────────
     def dismiss_results_popup(self):
-        log.info("Dismissing results-page popup...")
+        logger.info("Dismissing results-page popup...")
         try:
             width = self.driver.execute_script("return window.innerWidth;")
             height = self.driver.execute_script("return window.innerHeight;")
@@ -59,7 +62,7 @@ class ResultPage(BasePage):
 
     # ── Filters ─────────────────────────────────────────────────────
     def apply_nonstop_filter(self):
-        log.info("Applying Non-Stop filter...")
+        logger.info("Applying Non-Stop filter...")
         xpaths = [
             self.NONSTOP_CB_XPATH,
             "(//p[text()='Stops']/following-sibling::*//input[@type='checkbox'])[1]",
@@ -68,7 +71,7 @@ class ResultPage(BasePage):
             try:
                 cb = self.find(By.XPATH, xpath, timeout=8)
                 self.js_click(cb)
-                log.info("Non-Stop filter applied.")
+                logger.info("Non-Stop filter applied.")
                 # Wait for results to re-render after filter
                 WebDriverWait(self.driver, 10).until(
                     EC.element_to_be_clickable((By.XPATH, self.BOOK_BTN_XPATH))
@@ -84,16 +87,16 @@ class ResultPage(BasePage):
                 "(//p[text()='Stops']/following::p[text()='Non-Stop'])[1]/ancestor::div[1]",
             )
             self.safe_click(label)
-            log.info("Non-Stop filter applied (label click).")
+            logger.info("Non-Stop filter applied (label click).")
             WebDriverWait(self.driver, 10).until(
                 EC.element_to_be_clickable((By.XPATH, self.BOOK_BTN_XPATH))
             )
         except Exception:
-            log.warning("Non-Stop filter not found.")
+            logger.warning("Non-Stop filter not found.")
 
     # ── Sort ────────────────────────────────────────────────────────
     def sort_by_price(self):
-        log.info("Sorting by Price (Low to High)...")
+        logger.info("Sorting by Price (Low to High)...")
         xpaths = [
             self.PRICE_RADIO_XPATH,
             "//p[normalize-space()='Price']/ancestor::div[1]//input[@type='radio']",
@@ -102,7 +105,7 @@ class ResultPage(BasePage):
             try:
                 radio = self.find(By.XPATH, xpath, timeout=8)
                 self.js_click(radio)
-                log.info("Sorted by Price.")
+                logger.info("Sorted by Price.")
                 # Wait for results to re-render after sort
                 WebDriverWait(self.driver, 10).until(
                     EC.element_to_be_clickable((By.XPATH, self.BOOK_BTN_XPATH))
@@ -117,19 +120,39 @@ class ResultPage(BasePage):
                 "//p[normalize-space()='Price']/ancestor::div[contains(@class,'flex')][1]",
             )
             self.safe_click(label)
-            log.info("Sorted by Price (label click).")
+            logger.info("Sorted by Price (label click).")
             WebDriverWait(self.driver, 10).until(
                 EC.element_to_be_clickable((By.XPATH, self.BOOK_BTN_XPATH))
             )
         except Exception:
-            log.warning("Price sort not found.")
+            logger.warning("Price sort not found.")
 
     # ── Extract results ─────────────────────────────────────────────
+    def _parse_available_flight_count(self, text: str) -> int:
+        match = re.search(r"(\d+)\s+flights?\s+available", text or "", re.IGNORECASE)
+        if not match:
+            return 0
+        return int(match.group(1))
+
     def get_flight_count_text(self) -> str:
+        visible_count_texts = []
         for el in self.find_all(By.XPATH, self.FLIGHT_COUNT_XPATH):
-            if el.is_displayed():
-                return el.text.strip()
+            try:
+                text = el.text.strip()
+                if el.is_displayed() and self._parse_available_flight_count(text) > 0:
+                    visible_count_texts.append(text)
+            except Exception:
+                continue
+        if visible_count_texts:
+            return min(visible_count_texts, key=len)
         return ""
+
+    def get_available_flight_count(self) -> int:
+        """Return the visible 'Flights Available' count shown by ixigo."""
+        count = self._parse_available_flight_count(self.driver.page_source)
+        if count > 0:
+            return count
+        return self._parse_available_flight_count(self.get_flight_count_text())
 
     def get_flights(self, max_results: int = 5) -> list[dict]:
         """Return a list of dicts with basic flight info."""
@@ -153,25 +176,25 @@ class ResultPage(BasePage):
         return flights
 
     def print_results(self):
-        log.info("=" * 60)
+        logger.info("=" * 60)
         count = self.get_flight_count_text()
         if count:
-            log.info(count)
+            logger.info(count)
         for i, flight in enumerate(self.get_flights(), 1):
-            log.info(f"\n--- Flight {i} ---")
+            logger.info(f"\n--- Flight {i} ---")
             for line in flight["raw_lines"][:8]:
-                log.info(f"  {line}")
-        log.info("=" * 60)
+                logger.info(f"  {line}")
+        logger.info("=" * 60)
 
     # ── Book a flight ───────────────────────────────────────────────
     def click_book(self, index: int = 0):
         """Click the Book button for the nth visible flight (0-based)."""
-        log.info(f"Clicking Book on flight #{index + 1}...")
+        logger.info(f"Clicking Book on flight #{index + 1}...")
         book_btns = self.find_all(By.XPATH, self.BOOK_BTN_XPATH)
         visible = [b for b in book_btns if b.is_displayed()]
         if index < len(visible):
             self.safe_click(visible[index])
-            log.info("Book clicked — proceeding to traveller details.")
+            logger.info("Book clicked — proceeding to traveller details.")
             # Wait for navigation to booking page
             try:
                 WebDriverWait(self.driver, 15).until(
@@ -190,4 +213,4 @@ class ResultPage(BasePage):
                         EC.url_contains("search/result")
                     )
         else:
-            log.error(f"Only {len(visible)} Book buttons visible; index {index} out of range.")
+            logger.error(f"Only {len(visible)} Book buttons visible; index {index} out of range.")

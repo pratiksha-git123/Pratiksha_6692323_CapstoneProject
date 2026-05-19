@@ -13,9 +13,9 @@ from selenium.webdriver.remote.webelement import WebElement
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 
-from utils.logger import get_logger
+from utils.logger import LogGen
 
-log = get_logger()
+logger =LogGen.loggen()
 
 
 class BasePage:
@@ -105,7 +105,7 @@ class BasePage:
                     EC.element_to_be_clickable((By.ID, "closeButton"))
                 )
                 btn.click()
-                log.info("CleverTap popup closed.")
+                logger.info("CleverTap popup closed.")
             except Exception:
                 pass
             self.driver.switch_to.default_content()
@@ -135,7 +135,7 @@ class BasePage:
             }
             if (s) s.style.display = 'none';
         """)
-        log.info("Sale banner closed.")
+        logger.info("Sale banner closed.")
 
     def press_escape(self):
         try:
@@ -151,7 +151,7 @@ class BasePage:
 
     # ── Navigation ──────────────────────────────────────────────────
     def open(self, url: str):
-        log.info(f"Opening {url}")
+        logger.info(f"Opening {url}")
         self.driver.get(url)
 
     @property

@@ -11,9 +11,9 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 
 from pages.basepage import BasePage
-from utils.logger import get_logger
+from utils.logger import LogGen
 
-log = get_logger()
+logger =LogGen.loggen()
 
 
 class FlightSearchPage(BasePage):
@@ -51,7 +51,7 @@ class FlightSearchPage(BasePage):
 
     def wait_for_search_form(self, timeout: int = 15):
         """Wait until the search form is interactive (From input clickable)."""
-        log.info("Waiting for search form to be interactive...")
+        logger.info("Waiting for search form to be interactive...")
         WebDriverWait(self.driver, timeout).until(
             EC.element_to_be_clickable((By.XPATH, self.SEARCH_BTN_XPATH))
         )
@@ -61,7 +61,7 @@ class FlightSearchPage(BasePage):
         WebDriverWait(self.driver, timeout).until(
             EC.presence_of_element_located((By.XPATH, "//*[normalize-space()='From']"))
         )
-        log.info("Search form is ready.")
+        logger.info("Search form is ready.")
 
     def select_from_city(self, city: str, code: str):
         self._fill_city("From", city, code, self.FROM_INPUT_XPATH)
@@ -73,7 +73,7 @@ class FlightSearchPage(BasePage):
         month_year = travel_date.strftime("%B %Y")
         day = travel_date.day
         aria_label = f"{travel_date.strftime('%B')} {day}, {travel_date.year}"
-        log.info(f"Selecting date: {day} {month_year}")
+        logger.info(f"Selecting date: {day} {month_year}")
 
         try:
             departure = self.driver.find_element(
@@ -105,7 +105,7 @@ class FlightSearchPage(BasePage):
         try:
             day_button = self.find_clickable(By.XPATH, tile_xpath, timeout=5)
             self.safe_click(day_button)
-            log.info(f"Selected date: {aria_label}")
+            logger.info(f"Selected date: {aria_label}")
             return
         except TimeoutException:
             pass
@@ -113,19 +113,19 @@ class FlightSearchPage(BasePage):
         try:
             abbr = self.driver.find_element(By.CSS_SELECTOR, f"abbr[aria-label='{aria_label}']")
             self.safe_click(abbr)
-            log.info(f"Selected date (abbr fallback): {aria_label}")
+            logger.info(f"Selected date (abbr fallback): {aria_label}")
         except Exception:
-            log.warning(f"Could not select date {aria_label}")
+            logger.warning(f"Could not select date {aria_label}")
 
     def click_search(self):
-        log.info("Clicking Search...")
+        logger.info("Clicking Search...")
         self.dismiss_all_popups()
         button = self.find_clickable(By.XPATH, self.SEARCH_BTN_XPATH)
         self.safe_click(button)
-        log.info("Search clicked.")
+        logger.info("Search clicked.")
 
     def _fill_city(self, label: str, city: str, code: str, fallback_xpath: str):
-        log.info(f"Selecting {label}: {city} ({code})")
+        logger.info(f"Selecting {label}: {city} ({code})")
         city_input = self._open_city_picker(label)
 
         if city_input is None:
@@ -138,7 +138,7 @@ class FlightSearchPage(BasePage):
                 pass
 
         if city_input is None:
-            log.error(f"Could not find {label} input!")
+            logger.error(f"Could not find {label} input!")
             return
 
         # Type the human city name, then select the exact airport code from
@@ -217,13 +217,13 @@ class FlightSearchPage(BasePage):
                     option_text = " ".join(lines[1:]).lower()
                     if option_code == code and city.lower() in option_text:
                         self.safe_click(option)
-                        log.info(f"Selected {code} from dropdown.")
+                        logger.info(f"Selected {code} from dropdown.")
                         return
             except TimeoutException:
                 pass
 
             if attempt == 0:
-                log.info(f"{code} not in dropdown — clearing and retyping...")
+                logger.info(f"{code} not in dropdown — clearing and retyping...")
                 active = self.driver.switch_to.active_element
                 active.send_keys(Keys.CONTROL, "a")
                 active.send_keys(Keys.BACKSPACE)
@@ -238,5 +238,5 @@ class FlightSearchPage(BasePage):
                 )
                 time.sleep(2)
 
-        log.warning(f"Could not find {code} in dropdown — pressing Enter on current suggestion.")
+        logger.warning(f"Could not find {code} in dropdown — pressing Enter on current suggestion.")
         self.driver.switch_to.active_element.send_keys(Keys.ENTER)

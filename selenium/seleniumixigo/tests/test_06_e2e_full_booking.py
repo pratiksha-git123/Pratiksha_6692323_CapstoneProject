@@ -19,6 +19,7 @@ Tests:
 """
 from datetime import date
 
+import allure
 import pytest
 
 from pages.flightsearchpage import FlightSearchPage
@@ -29,10 +30,14 @@ from pages.addonspage import AddonsPage
 from pages.paymentpage import PaymentPage
 from utils.config_reader import get_int
 from utils.csv_reader import read_csv
-from utils.logger import get_logger
+
 from utils.route_reader import get_random_route
 
-log = get_logger()
+from utils.logger import LogGen
+from utils.screenshot_util import take_screenshot
+
+logger =LogGen.loggen()
+
 
 
 @pytest.mark.usefixtures("driver")
@@ -45,7 +50,7 @@ class TestE2EFullBooking:
         page = FlightSearchPage(driver)
         page.open_search_page()
         assert "ixigo" in driver.title.lower()
-        log.info("PASS: Site opened.")
+        logger.info("PASS: Site opened.")
 
     @pytest.mark.order(2)
     def test_02_login(self, driver):
@@ -55,7 +60,7 @@ class TestE2EFullBooking:
             mobile=login_mobile,
             timeout=get_int("login", "wait_timeout", fallback=300)
         )
-        log.info("PASS: Logged in.")
+        logger.info("PASS: Logged in.")
 
     @pytest.mark.search
     @pytest.mark.order(3)
@@ -69,12 +74,13 @@ class TestE2EFullBooking:
         page.select_to_city(route["to_city"], route["to_code"])
         page.select_departure_date(date.fromisoformat(route["travel_date"]))
         page.click_search()
+        take_screenshot.capture_screenshot(driver, "search_page")
         results = ResultPage(driver)
         results.wait_for_results(timeout=60)
         results.dismiss_results_popup()
-        flights = results.get_flights()
-        assert len(flights) > 0, "No flights found"
-        log.info(f"PASS: {len(flights)} flights found.")
+        flight_count = results.get_available_flight_count()
+        assert flight_count > 0, "No flights found"
+        logger.info(f"PASS: {flight_count} flights available.")
 
     @pytest.mark.search
     @pytest.mark.order(4)
@@ -82,9 +88,10 @@ class TestE2EFullBooking:
         """Apply Non-Stop filter."""
         results = ResultPage(driver)
         results.apply_nonstop_filter()
-        flights = results.get_flights()
-        assert len(flights) > 0, "No flights after Non-Stop filter"
-        log.info(f"PASS: Non-Stop filter → {len(flights)} flights.")
+        flight_count = results.get_available_flight_count()
+        take_screenshot.capture_screenshot(driver, "filter")
+        assert flight_count > 0, "No flights after Non-Stop filter"
+        logger.info(f"PASS: Non-Stop filter → {flight_count} flights.")
 
     @pytest.mark.search
     @pytest.mark.order(5)
@@ -93,26 +100,28 @@ class TestE2EFullBooking:
         results = ResultPage(driver)
         results.sort_by_price()
         results.dismiss_results_popup()
-        flights = results.get_flights()
-        assert len(flights) > 0, "No flights after sort"
-        log.info(f"PASS: Sorted by price → {len(flights)} flights.")
+        flight_count = results.get_available_flight_count()
+        take_screenshot.capture_screenshot(driver, "SortBYPrice")
+        assert flight_count > 0, "No flights after sort"
+        logger.info(f"PASS: Sorted by price → {flight_count} flights.")
 
     @pytest.mark.search
     @pytest.mark.order(6)
     def test_06_print_results(self, driver):
-        """Print top flight results to log."""
+        """Print top flight results to logger."""
         results = ResultPage(driver)
         results.print_results()
-        flights = results.get_flights()
-        assert len(flights) >= 1, "No flights to print"
-        log.info(f"PASS: {len(flights)} results printed.")
+        flight_count = results.get_available_flight_count()
+        assert flight_count >= 1, "No flights to print"
+        logger.info(f"PASS: {flight_count} results printed.")
 
     @pytest.mark.booking
     @pytest.mark.order(7)
     def test_07_click_book(self, driver):
         """Book the cheapest flight."""
         ResultPage(driver).click_book(index=0)
-        log.info("PASS: Book clicked.")
+        take_screenshot.capture_screenshot(driver, "Book Flight")
+        logger.info("PASS: Book clicked.")
 
     @pytest.mark.booking
     @pytest.mark.order(8)
@@ -120,14 +129,15 @@ class TestE2EFullBooking:
         """Booking page loads."""
         BookingPage(driver).wait_for_booking_page(timeout=30)
         assert "/flight/booking/" in driver.current_url
-        log.info("PASS: Booking page loaded.")
+        logger.info("PASS: Booking page loaded.")
 
     @pytest.mark.booking
     @pytest.mark.order(9)
     def test_09_decline_cancellation(self, driver):
         """Decline free cancellation."""
         BookingPage(driver).decline_free_cancellation()
-        log.info("PASS: Cancellation declined.")
+        take_screenshot.capture_screenshot(driver, "Free Cancellation")
+        logger.info("PASS: Cancellation declined.")
 
     @pytest.mark.booking
     @pytest.mark.order(10)
@@ -137,7 +147,8 @@ class TestE2EFullBooking:
         traveller = read_csv("traveller_data.csv")[0]
         filled = booking.fill_traveller_form(traveller)
         assert filled, "Form not filled"
-        log.info(f"PASS: {traveller['first_name']} {traveller['last_name']}.")
+        take_screenshot.capture_screenshot(driver, "Traveller detail")
+        logger.info(f"PASS: {traveller['first_name']} {traveller['last_name']}.")
 
     @pytest.mark.booking
     @pytest.mark.order(11)
@@ -147,37 +158,41 @@ class TestE2EFullBooking:
         booking.click_continue()
         booking.confirm_details()
         booking.dismiss_upsell_popup()
-        log.info("PASS: Confirmed.")
+        logger.info("PASS: Confirmed.")
 
     @pytest.mark.payment
     @pytest.mark.order(12)
     def test_12_addons_page(self, driver):
         """Add-ons page loads."""
         AddonsPage(driver).wait_for_addons_page(timeout=30)
-        log.info("PASS: Add-ons page.")
+        logger.info("PASS: Add-ons page.")
 
     @pytest.mark.payment
     @pytest.mark.order(13)
+
     def test_13_select_seat(self, driver):
         """Select a seat or note none available."""
         addons = AddonsPage(driver)
         selected = addons.select_random_seat()
         if selected:
-            log.info("PASS: Seat selected.")
+            logger.info("PASS: Seat selected.")
         else:
-            log.info("PASS: No seat layout — will skip.")
+            logger.info("PASS: No seat layout — will skip.")
 
     @pytest.mark.payment
     @pytest.mark.order(14)
+
     def test_14_skip_to_payment(self, driver):
         """Skip to payment."""
         AddonsPage(driver).skip_to_payment()
-        log.info("PASS: Skipped to payment.")
+        logger.info("PASS: Skipped to payment.")
 
     @pytest.mark.payment
     @pytest.mark.order(15)
+
     def test_15_payment_page(self, driver):
         """Payment page reached — full flow complete."""
         reached = PaymentPage(driver).wait_for_payment_page(timeout=30)
         assert reached, "Payment page not reached"
-        log.info("PASS: Payment page — E2E COMPLETE!")
+        take_screenshot.capture_screenshot(driver, "PaymentPage")
+        logger.info("PASS: Payment page — E2E COMPLETE!")

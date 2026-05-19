@@ -14,10 +14,9 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 
 from pages.basepage import BasePage
-from utils.logger import get_logger
+from utils.logger import LogGen
 
-log = get_logger()
-
+logger =LogGen.loggen()
 
 class BookingPage(BasePage):
     """Page Object for the Review & Traveller Details step."""
@@ -48,7 +47,7 @@ class BookingPage(BasePage):
 
     # ── Wait for booking page ────────────────────────────────────────
     def wait_for_booking_page(self, timeout: int = 30):
-        log.info("Waiting for booking/traveller details page...")
+        logger.info("Waiting for booking/traveller details page...")
         WebDriverWait(self.driver, timeout).until(
             EC.url_contains("/flight/booking/")
         )
@@ -57,11 +56,11 @@ class BookingPage(BasePage):
                 (By.XPATH, self.TRAVELLER_HEADING_XPATH)
             )
         )
-        log.info("Booking page loaded.")
+        logger.info("Booking page loaded.")
 
     # ── Decline Free Cancellation ─────────────────────────────────────
     def decline_free_cancellation(self):
-        log.info("Selecting 'I don't want Free Cancellation'...")
+        logger.info("Selecting 'I don't want Free Cancellation'...")
         try:
             section = self.find(
                 By.XPATH, "//*[contains(.,'Add Free Cancellation')]", timeout=10,
@@ -82,17 +81,17 @@ class BookingPage(BasePage):
             try:
                 radio = self.find(By.XPATH, xpath, timeout=5)
                 self.js_click(radio)
-                log.info("Declined Free Cancellation.")
+                logger.info("Declined Free Cancellation.")
                 return
             except TimeoutException:
                 continue
-        log.warning("Could not find 'I don't want Free Cancellation' radio.")
+        logger.warning("Could not find 'I don't want Free Cancellation' radio.")
 
     # ── Deselect any pre-selected saved travellers ─────────────────
     def _deselect_saved_travellers(self):
         """Uncheck any pre-selected saved traveller checkboxes so we can
         fill the form manually."""
-        log.info("Deselecting any pre-selected saved travellers...")
+        logger.info("Deselecting any pre-selected saved travellers...")
         try:
             checkboxes = self.driver.find_elements(
                 By.XPATH,
@@ -103,7 +102,7 @@ class BookingPage(BasePage):
                 try:
                     if cb.is_selected():
                         self.js_click(cb)
-                        log.info("Unchecked a pre-selected saved traveller.")
+                        logger.info("Unchecked a pre-selected saved traveller.")
                 except Exception:
                     continue
         except Exception:
@@ -112,7 +111,7 @@ class BookingPage(BasePage):
     # ── Expand the traveller form (click edit icon) ──────────────────
     def _expand_traveller_form(self):
         """Click the Adult 1 section/edit icon to expand the form fields."""
-        log.info("Expanding traveller form...")
+        logger.info("Expanding traveller form...")
         try:
             # Try clicking the edit/pencil icon or "Adult 1" text
             xpaths = [
@@ -130,7 +129,7 @@ class BookingPage(BasePage):
                             By.XPATH, "//*[normalize-space()='Title']"
                         ))
                     )
-                    log.info("Expanded traveller form.")
+                    logger.info("Expanded traveller form.")
                     return
                 except TimeoutException:
                     continue
@@ -163,7 +162,7 @@ class BookingPage(BasePage):
                     EC.presence_of_element_located((By.XPATH, xpath))
                 )
                 if el.is_displayed():
-                    log.info(f"Found '{label_text}' via: {xpath}")
+                    logger.info(f"Found '{label_text}' via: {xpath}")
                     return el
             except (TimeoutException, Exception):
                 continue
@@ -174,11 +173,11 @@ class BookingPage(BasePage):
 
     # ── Title selection ──────────────────────────────────────────────
     def select_title(self, title: str) -> bool:
-        log.info(f"Selecting title: {title}")
+        logger.info(f"Selecting title: {title}")
         try:
             el = self._find_input("Title", exact=True, timeout=8)
         except TimeoutException:
-            log.error("Title field NOT FOUND.")
+            logger.error("Title field NOT FOUND.")
             return False
 
         tag = el.tag_name.lower()
@@ -188,14 +187,14 @@ class BookingPage(BasePage):
             from selenium.webdriver.support.ui import Select
             try:
                 Select(el).select_by_visible_text(title)
-                log.info(f"Title '{title}' selected via <select>.")
+                logger.info(f"Title '{title}' selected via <select>.")
                 return True
             except Exception:
                 try:
                     Select(el).select_by_value(title)
                     return True
                 except Exception:
-                    log.error(f"Could not select '{title}' from <select>.")
+                    logger.error(f"Could not select '{title}' from <select>.")
                     return False
 
         # Custom dropdown textbox — click to open, then click option
@@ -210,10 +209,10 @@ class BookingPage(BasePage):
                 timeout=5,
             )
             self.safe_click(option)
-            log.info(f"Title '{title}' selected from dropdown.")
+            logger.info(f"Title '{title}' selected from dropdown.")
             return True
         except TimeoutException:
-            log.info(f"Typing title '{title}' directly.")
+            logger.info(f"Typing title '{title}' directly.")
             el.send_keys(Keys.CONTROL, "a")
             el.send_keys(title)
             el.send_keys(Keys.RETURN)
@@ -226,11 +225,11 @@ class BookingPage(BasePage):
         success, False if the field was not found."""
         if not value:
             return True
-        log.info(f"Filling '{label_text}': {value}")
+        logger.info(f"Filling '{label_text}': {value}")
         try:
             el = self._find_input(label_text, exact=exact, timeout=8)
         except TimeoutException:
-            log.error(f"FIELD NOT FOUND: '{label_text}'")
+            logger.error(f"FIELD NOT FOUND: '{label_text}'")
             return False
 
         try:
@@ -245,12 +244,12 @@ class BookingPage(BasePage):
 
             actual = el.get_attribute("value") or ""
             if value.lower() not in actual.lower():
-                log.warning(
+                logger.warning(
                     f"'{label_text}': expected '{value}', got '{actual}'"
                 )
             return True
         except Exception as e:
-            log.error(f"Failed to fill '{label_text}': {e}")
+            logger.error(f"Failed to fill '{label_text}': {e}")
             return False
 
     def _fill_if_empty(self, label_text: str, value: str,
@@ -262,17 +261,17 @@ class BookingPage(BasePage):
             el = self._find_input(label_text, exact=exact, timeout=5)
             current = el.get_attribute("value") or ""
             if current.strip():
-                log.info(f"'{label_text}' pre-filled: '{current}' — keeping.")
+                logger.info(f"'{label_text}' pre-filled: '{current}' — keeping.")
                 return
             self._fill_field(label_text, value, exact=exact)
         except TimeoutException:
-            log.warning(f"'{label_text}' not found — skipping.")
+            logger.warning(f"'{label_text}' not found — skipping.")
 
     # ── Fill entire form from CSV row ───────────────────────────────
     def fill_traveller_form(self, data: dict) -> bool:
         """Fill every traveller form field manually from CSV data.
         Returns True if all required fields were filled successfully."""
-        log.info("Filling traveller form from CSV data...")
+        logger.info("Filling traveller form from CSV data...")
         title = data.get("title", "Mr")
         first_name = data.get("first_name", "")
         last_name = data.get("last_name", "")
@@ -313,7 +312,7 @@ class BookingPage(BasePage):
                 if not self._fill_field("Pincode", pincode):
                     ok = False
             except TimeoutException:
-                log.info("Pincode field not present on this provider — skipping.")
+                logger.info("Pincode field not present on this provider — skipping.")
 
         # 7. Address (optional — not all providers show Billing Address)
         address = data.get("address", "")
@@ -323,17 +322,17 @@ class BookingPage(BasePage):
                 if not self._fill_field("Address", address):
                     ok = False
             except TimeoutException:
-                log.info("Address field not present on this provider — skipping.")
+                logger.info("Address field not present on this provider — skipping.")
 
         if ok:
-            log.info("Traveller form filled successfully (all fields).")
+            logger.info("Traveller form filled successfully (all fields).")
         else:
-            log.error("Some traveller fields could NOT be filled!")
+            logger.error("Some traveller fields could NOT be filled!")
         return ok
 
     # ── Click Continue ───────────────────────────────────────────────
     def click_continue(self):
-        log.info("Clicking Continue...")
+        logger.info("Clicking Continue...")
         btn = self.find_clickable(By.XPATH, self.CONTINUE_BTN_XPATH, timeout=10)
         self.safe_click(btn)
         # Wait for Confirm button or page transition
@@ -343,30 +342,30 @@ class BookingPage(BasePage):
             )
         except TimeoutException:
             pass
-        log.info("Continue clicked.")
+        logger.info("Continue clicked.")
 
     # ── Confirm traveller details (Review dialog) ────────────────────
     def confirm_details(self):
-        log.info("Looking for Confirm button on review dialog...")
+        logger.info("Looking for Confirm button on review dialogger...")
         try:
             btn = self.find_clickable(By.XPATH, self.CONFIRM_BTN_XPATH, timeout=10)
             self.safe_click(btn)
-            log.info("Confirm clicked.")
+            logger.info("Confirm clicked.")
             # Wait for page transition (addons page or upsell popup)
             WebDriverWait(self.driver, 10).until(
                 lambda d: "booking" not in d.current_url or
                 len(d.find_elements(By.XPATH, self.NO_THANKS_XPATH)) > 0
             )
         except TimeoutException:
-            log.info("No Confirm dialog appeared — continuing.")
+            logger.info("No Confirm dialog appeared — continuing.")
 
     # ── Dismiss upsell popups ────────────────────────────────────────
     def dismiss_upsell_popup(self):
-        log.info("Checking for upsell popup...")
+        logger.info("Checking for upsell popup...")
         try:
             btn = self.find_clickable(By.XPATH, self.NO_THANKS_XPATH, timeout=8)
             self.safe_click(btn)
-            log.info("Upsell popup dismissed (No, Thanks).")
+            logger.info("Upsell popup dismissed (No, Thanks).")
         except TimeoutException:
             alt_xpaths = [
                 "//button[contains(text(),'Skip')]",
@@ -378,11 +377,11 @@ class BookingPage(BasePage):
                         EC.element_to_be_clickable((By.XPATH, xpath))
                     )
                     self.safe_click(btn)
-                    log.info("Upsell popup dismissed (alt).")
+                    logger.info("Upsell popup dismissed (alt).")
                     return
                 except (TimeoutException, Exception):
                     continue
-            log.info("No upsell popup found.")
+            logger.info("No upsell popup found.")
 
     def has_form_validation_error(self) -> bool:
         for message in self.find_all(By.XPATH, self.VALIDATION_MESSAGE_XPATH):
@@ -399,4 +398,4 @@ class BookingPage(BasePage):
         self.click_continue()
         self.confirm_details()
         self.dismiss_upsell_popup()
-        log.info("Traveller details completed — proceeding to add-ons.")
+        logger.info("Traveller details completed — proceeding to add-ons.")
