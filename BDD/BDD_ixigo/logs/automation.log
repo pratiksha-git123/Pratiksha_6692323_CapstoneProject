@@ -1193,3 +1193,315 @@
 2026-05-23 00:13:19,133 [INFO] Closing browser after feature: Ixigo full end-to-end booking
 2026-05-23 00:13:21,674 [INFO] BDD suite finished.
 2026-05-23 00:13:21,675 [INFO] Reports will open shortly. HTML works without extra tools; Allure opens when Allure commandline is installed. Logs: C:\Users\iterj\Documents\Codex\2026-05-17\Ixigo_Flight_Automation\Ixigo_Flight_Automation_BDD\reports\allure-command-*.log
+2026-05-23 02:08:14,628 [INFO] Sale banner closed.
+2026-05-23 02:08:14,715 [INFO] Opening https://www.ixigo.com/flights
+2026-05-23 02:08:22,578 [INFO] Sale banner closed.
+2026-05-23 02:08:22,676 [INFO] Waiting for search form to be interactive...
+2026-05-23 02:08:22,738 [INFO] Search form is ready.
+2026-05-23 02:08:22,738 [INFO] Selecting From: Mumbai (BOM)
+2026-05-23 02:08:28,451 [INFO] Selected BOM from dropdown.
+2026-05-23 02:08:28,452 [INFO] Clicking Search...
+2026-05-23 02:08:35,638 [INFO] Sale banner closed.
+2026-05-23 02:08:36,009 [INFO] Search clicked.
+2026-05-23 02:08:40,348 [INFO] BDD scenario screenshot saved: C:\WiproCapstone\BDD\BDD_ixigo\utils\..\logs\Search_without_destination_should_not_navigate_to_results_passed_20260523_020840.png
+2026-05-23 02:08:40,348 [INFO] Closing isolated browser after scenario: Search without destination should not navigate to results
+2026-05-23 02:08:42,690 [INFO] Starting scenario: Booking flow reaches traveller details
+2026-05-23 02:08:43,640 [INFO] Browser started: MicrosoftEdge
+2026-05-23 02:08:43,640 [INFO] Opening https://www.ixigo.com/flights
+2026-05-23 02:08:52,091 [INFO] Sale banner closed.
+2026-05-23 02:08:52,200 [INFO] Opening https://www.ixigo.com/flights
+2026-05-23 02:08:56,753 [INFO] BDD suite finished.
+2026-05-23 02:08:56,756 [INFO] Reports will open shortly. HTML works without extra tools; Allure opens when Allure commandline is installed. Logs: C:\WiproCapstone\BDD\BDD_ixigo\reports\allure-command-*.log
+2026-05-23 02:09:12,248 [INFO] BDD suite started.
+2026-05-23 02:09:12,250 [INFO] Starting feature: Ixigo combined flow
+2026-05-23 02:09:13,289 [INFO] Browser started: MicrosoftEdge
+2026-05-23 02:09:13,301 [INFO] Opening https://www.ixigo.com/flights
+2026-05-23 02:09:22,033 [INFO] Sale banner closed.
+2026-05-23 02:09:22,202 [INFO] Starting scenario: Open ixigo page
+2026-05-23 02:09:22,202 [INFO] Opening https://www.ixigo.com/flights
+2026-05-23 02:09:30,112 [INFO] Sale banner closed.
+2026-05-23 02:09:30,454 [INFO] BDD scenario screenshot saved: C:\WiproCapstone\BDD\BDD_ixigo\utils\..\logs\Open_ixigo_page_passed_20260523_020930.png
+2026-05-23 02:09:30,459 [INFO] Starting scenario: Page elements are present
+2026-05-23 02:09:30,777 [INFO] BDD scenario screenshot saved: C:\WiproCapstone\BDD\BDD_ixigo\utils\..\logs\Page_elements_are_present_passed_20260523_020930.png
+2026-05-23 02:09:30,780 [INFO] Starting scenario: Search BOM to BLR flights
+2026-05-23 02:09:30,780 [INFO] Opening https://www.ixigo.com/flights
+2026-05-23 02:09:38,596 [INFO] Sale banner closed.
+2026-05-23 02:09:38,662 [INFO] Waiting for search form to be interactive...
+2026-05-23 02:09:38,709 [INFO] Search form is ready.
+2026-05-23 02:09:38,710 [INFO] Selecting From: Mumbai (BOM)
+2026-05-23 02:09:44,550 [INFO] Selected BOM from dropdown.
+2026-05-23 02:09:44,550 [INFO] Selecting To: Bengaluru (BLR)
+2026-05-23 02:09:50,429 [INFO] Selected BLR from dropdown.
+2026-05-23 02:09:50,430 [INFO] Selecting date: 10 June 2026
+2026-05-23 02:09:50,845 [INFO] Selected date: June 10, 2026
+2026-05-23 02:09:50,845 [INFO] Clicking Search...
+2026-05-23 02:09:58,028 [INFO] Sale banner closed.
+2026-05-23 02:09:58,226 [INFO] Search clicked.
+2026-05-23 02:10:01,513 [INFO] Waiting for flight results...
+2026-05-23 02:10:01,582 [INFO] Results loaded.
+2026-05-23 02:10:01,582 [INFO] Dismissing results-page popup...
+2026-05-23 02:10:02,264 [INFO] BDD scenario screenshot saved: C:\WiproCapstone\BDD\BDD_ixigo\utils\..\logs\Search_BOM_to_BLR_flights_passed_20260523_021002.png
+2026-05-23 02:10:02,266 [INFO] Starting scenario: Flight count and book buttons are visible
+2026-05-23 02:10:02,682 [INFO] BDD scenario screenshot saved: C:\WiproCapstone\BDD\BDD_ixigo\utils\..\logs\Flight_count_and_book_buttons_are_visible_passed_20260523_021002.png
+2026-05-23 02:10:02,687 [INFO] Starting scenario: Apply nonstop filter and sort by price
+2026-05-23 02:10:02,688 [INFO] Applying Non-Stop filter...
+2026-05-23 02:10:02,747 [INFO] Non-Stop filter applied.
+2026-05-23 02:10:03,196 [INFO] Sorting by Price (Low to High)...
+2026-05-23 02:10:03,254 [INFO] Sorted by Price.
+2026-05-23 02:10:03,346 [INFO] Dismissing results-page popup...
+2026-05-23 02:10:04,446 [INFO] BDD scenario screenshot saved: C:\WiproCapstone\BDD\BDD_ixigo\utils\..\logs\Apply_nonstop_filter_and_sort_by_price_passed_20260523_021004.png
+2026-05-23 02:10:04,449 [INFO] Starting scenario: Print flight results
+2026-05-23 02:10:04,450 [INFO] ============================================================
+2026-05-23 02:10:06,642 [INFO] 37 Flights Available
+2026-05-23 02:10:06,910 [INFO] 
+--- Flight 1 ---
+2026-05-23 02:10:06,910 [INFO]   ₹5,058
+2026-05-23 02:10:06,911 [INFO]   Extra ₹640 Off
+2026-05-23 02:10:06,911 [INFO]   Book
+2026-05-23 02:10:06,911 [INFO] 
+--- Flight 2 ---
+2026-05-23 02:10:06,911 [INFO]   Recommended
+2026-05-23 02:10:06,911 [INFO]   Akasa Air
+2026-05-23 02:10:06,912 [INFO]   QP2001
+2026-05-23 02:10:06,912 [INFO]   07:15
+2026-05-23 02:10:06,912 [INFO]   NMI
+2026-05-23 02:10:06,912 [INFO]   1h 45m
+2026-05-23 02:10:06,912 [INFO]   Non-stop
+2026-05-23 02:10:06,913 [INFO]   09:00
+2026-05-23 02:10:06,913 [INFO] 
+--- Flight 3 ---
+2026-05-23 02:10:06,913 [INFO]   ₹5,525
+2026-05-23 02:10:06,913 [INFO]   Extra ₹655 Off
+2026-05-23 02:10:06,913 [INFO]   Book
+2026-05-23 02:10:06,914 [INFO] 
+--- Flight 4 ---
+2026-05-23 02:10:06,914 [INFO]   Akasa Air
+2026-05-23 02:10:06,914 [INFO]   QP1985
+2026-05-23 02:10:06,914 [INFO]   23:20
+2026-05-23 02:10:06,914 [INFO]   BOM
+2026-05-23 02:10:06,915 [INFO]   1h 50m
+2026-05-23 02:10:06,915 [INFO]   Non-stop
+2026-05-23 02:10:06,915 [INFO]   01:10
+2026-05-23 02:10:06,915 [INFO]   +1
+2026-05-23 02:10:06,915 [INFO] 
+--- Flight 5 ---
+2026-05-23 02:10:06,916 [INFO]   ₹5,308
+2026-05-23 02:10:06,916 [INFO]   Extra ₹435 Off
+2026-05-23 02:10:06,916 [INFO]   Book
+2026-05-23 02:10:06,916 [INFO] ============================================================
+2026-05-23 02:10:07,525 [INFO] BDD scenario screenshot saved: C:\WiproCapstone\BDD\BDD_ixigo\utils\..\logs\Print_flight_results_passed_20260523_021007.png
+2026-05-23 02:10:07,528 [INFO] Starting scenario: Same source and destination should not navigate to results
+2026-05-23 02:10:09,511 [INFO] Browser started: MicrosoftEdge
+2026-05-23 02:10:09,511 [INFO] Opening https://www.ixigo.com/flights
+2026-05-23 02:10:19,495 [INFO] Sale banner closed.
+2026-05-23 02:10:19,579 [INFO] Opening https://www.ixigo.com/flights
+2026-05-23 02:10:27,385 [INFO] Sale banner closed.
+2026-05-23 02:10:27,440 [INFO] Waiting for search form to be interactive...
+2026-05-23 02:10:27,492 [INFO] Search form is ready.
+2026-05-23 02:10:27,493 [INFO] Selecting From: Mumbai (BOM)
+2026-05-23 02:10:33,433 [INFO] Selected BOM from dropdown.
+2026-05-23 02:10:33,433 [INFO] Selecting To: Mumbai (BOM)
+2026-05-23 02:10:39,260 [INFO] Selected BOM from dropdown.
+2026-05-23 02:10:39,260 [INFO] Selecting date: 4 June 2026
+2026-05-23 02:10:47,277 [INFO] Selected date (abbr fallback): June 4, 2026
+2026-05-23 02:10:47,277 [INFO] Clicking Search...
+2026-05-23 02:10:54,386 [INFO] Sale banner closed.
+2026-05-23 02:10:54,592 [INFO] Search clicked.
+2026-05-23 02:10:58,175 [INFO] BDD scenario screenshot saved: C:\WiproCapstone\BDD\BDD_ixigo\utils\..\logs\Same_source_and_destination_should_not_navigate_to_results_passed_20260523_021057.png
+2026-05-23 02:10:58,175 [INFO] Closing isolated browser after scenario: Same source and destination should not navigate to results
+2026-05-23 02:11:00,533 [INFO] Starting scenario: Search without destination should not navigate to results
+2026-05-23 02:11:01,742 [INFO] Browser started: MicrosoftEdge
+2026-05-23 02:11:01,743 [INFO] Opening https://www.ixigo.com/flights
+2026-05-23 02:11:10,902 [INFO] Sale banner closed.
+2026-05-23 02:11:10,988 [INFO] Opening https://www.ixigo.com/flights
+2026-05-23 02:11:18,874 [INFO] Sale banner closed.
+2026-05-23 02:11:18,950 [INFO] Waiting for search form to be interactive...
+2026-05-23 02:11:19,000 [INFO] Search form is ready.
+2026-05-23 02:11:19,000 [INFO] Selecting From: Mumbai (BOM)
+2026-05-23 02:11:24,752 [INFO] Selected BOM from dropdown.
+2026-05-23 02:11:24,752 [INFO] Clicking Search...
+2026-05-23 02:11:31,901 [INFO] Sale banner closed.
+2026-05-23 02:11:32,167 [INFO] Search clicked.
+2026-05-23 02:11:36,466 [INFO] BDD scenario screenshot saved: C:\WiproCapstone\BDD\BDD_ixigo\utils\..\logs\Search_without_destination_should_not_navigate_to_results_passed_20260523_021136.png
+2026-05-23 02:11:36,466 [INFO] Closing isolated browser after scenario: Search without destination should not navigate to results
+2026-05-23 02:11:38,802 [INFO] Starting scenario: Booking flow reaches traveller details
+2026-05-23 02:11:40,315 [INFO] Browser started: MicrosoftEdge
+2026-05-23 02:11:40,316 [INFO] Opening https://www.ixigo.com/flights
+2026-05-23 02:11:47,695 [INFO] Sale banner closed.
+2026-05-23 02:11:47,852 [INFO] Opening https://www.ixigo.com/flights
+2026-05-23 02:11:55,948 [INFO] Sale banner closed.
+2026-05-23 02:11:56,013 [INFO] Waiting for search form to be interactive...
+2026-05-23 02:11:56,057 [INFO] Search form is ready.
+2026-05-23 02:11:56,058 [INFO] Selecting From: Mumbai (BOM)
+2026-05-23 02:12:01,874 [INFO] Selected BOM from dropdown.
+2026-05-23 02:12:01,874 [INFO] Selecting To: Bengaluru (BLR)
+2026-05-23 02:12:07,599 [INFO] Selected BLR from dropdown.
+2026-05-23 02:12:07,599 [INFO] Selecting date: 4 June 2026
+2026-05-23 02:12:15,380 [INFO] Selected date (abbr fallback): June 4, 2026
+2026-05-23 02:12:15,380 [INFO] Clicking Search...
+2026-05-23 02:12:22,527 [INFO] Sale banner closed.
+2026-05-23 02:12:22,691 [INFO] Search clicked.
+2026-05-23 02:12:25,944 [INFO] Waiting for flight results...
+2026-05-23 02:12:26,018 [INFO] Results loaded.
+2026-05-23 02:12:26,018 [INFO] Dismissing results-page popup...
+2026-05-23 02:12:26,379 [INFO] Applying Non-Stop filter...
+2026-05-23 02:12:33,121 [INFO] Non-Stop filter applied.
+2026-05-23 02:12:33,478 [INFO] Sorting by Price (Low to High)...
+2026-05-23 02:12:33,524 [INFO] Sorted by Price.
+2026-05-23 02:12:33,592 [INFO] Dismissing results-page popup...
+2026-05-23 02:12:34,223 [INFO] Clicking Book on flight #1...
+2026-05-23 02:12:34,397 [INFO] Book clicked — proceeding to traveller details.
+2026-05-23 02:12:35,127 [INFO] Waiting for booking/traveller details page...
+2026-05-23 02:12:35,163 [INFO] Booking page loaded.
+2026-05-23 02:12:35,207 [INFO] Selecting 'I don't want Free Cancellation'...
+2026-05-23 02:12:42,740 [INFO] Declined Free Cancellation.
+2026-05-23 02:12:42,934 [INFO] Waiting for booking/traveller details page...
+2026-05-23 02:12:42,939 [INFO] Booking page loaded.
+2026-05-23 02:12:43,160 [INFO] BDD scenario screenshot saved: C:\WiproCapstone\BDD\BDD_ixigo\utils\..\logs\Booking_flow_reaches_traveller_details_passed_20260523_021242.png
+2026-05-23 02:12:43,160 [INFO] Closing isolated browser after scenario: Booking flow reaches traveller details
+2026-05-23 02:12:45,619 [INFO] Closing browser after feature: Ixigo combined flow
+2026-05-23 02:12:47,971 [INFO] Starting feature: Ixigo full end-to-end booking
+2026-05-23 02:12:48,818 [INFO] Browser started: MicrosoftEdge
+2026-05-23 02:12:48,819 [INFO] Opening https://www.ixigo.com/flights
+2026-05-23 02:12:57,810 [INFO] Sale banner closed.
+2026-05-23 02:12:57,875 [INFO] Starting scenario: Open site
+2026-05-23 02:12:57,875 [INFO] Opening https://www.ixigo.com/flights
+2026-05-23 02:13:05,526 [INFO] Sale banner closed.
+2026-05-23 02:13:05,866 [INFO] BDD scenario screenshot saved: C:\WiproCapstone\BDD\BDD_ixigo\utils\..\logs\Open_site_passed_20260523_021305.png
+2026-05-23 02:13:05,868 [INFO] Starting scenario: Login
+2026-05-23 02:13:05,869 [INFO] Clicking Log in/Sign up...
+2026-05-23 02:13:06,024 [INFO] Login dialog opened.
+2026-05-23 02:13:06,883 [INFO] Mobile number submitted; waiting for OTP.
+2026-05-23 02:13:06,884 [INFO] Waiting up to 300s for manual OTP entry...
+2026-05-23 02:13:35,470 [INFO] Login completed!
+2026-05-23 02:13:35,717 [INFO] BDD scenario screenshot saved: C:\WiproCapstone\BDD\BDD_ixigo\utils\..\logs\Login_passed_20260523_021335.png
+2026-05-23 02:13:35,719 [INFO] Starting scenario: Search flights
+2026-05-23 02:13:35,720 [INFO] Opening https://www.ixigo.com/flights
+2026-05-23 02:13:43,426 [INFO] Sale banner closed.
+2026-05-23 02:13:43,486 [INFO] Waiting for search form to be interactive...
+2026-05-23 02:13:43,524 [INFO] Search form is ready.
+2026-05-23 02:13:43,525 [INFO] Selecting From: Mumbai (BOM)
+2026-05-23 02:13:49,484 [INFO] Selected BOM from dropdown.
+2026-05-23 02:13:49,486 [INFO] Selecting To: Delhi (DEL)
+2026-05-23 02:13:55,265 [INFO] Selected DEL from dropdown.
+2026-05-23 02:13:55,265 [INFO] Selecting date: 20 June 2026
+2026-05-23 02:13:55,684 [INFO] Selected date: June 20, 2026
+2026-05-23 02:13:55,684 [INFO] Clicking Search...
+2026-05-23 02:14:02,950 [INFO] Sale banner closed.
+2026-05-23 02:14:03,188 [INFO] Search clicked.
+2026-05-23 02:14:03,359 [INFO] Waiting for flight results...
+2026-05-23 02:14:05,078 [INFO] Results loaded.
+2026-05-23 02:14:05,078 [INFO] Dismissing results-page popup...
+2026-05-23 02:14:06,202 [INFO] BDD scenario screenshot saved: C:\WiproCapstone\BDD\BDD_ixigo\utils\..\logs\Search_flights_passed_20260523_021405.png
+2026-05-23 02:14:06,208 [INFO] Starting scenario: Apply nonstop filter
+2026-05-23 02:14:06,208 [INFO] Applying Non-Stop filter...
+2026-05-23 02:14:07,156 [INFO] Non-Stop filter applied.
+2026-05-23 02:14:07,808 [INFO] BDD scenario screenshot saved: C:\WiproCapstone\BDD\BDD_ixigo\utils\..\logs\Apply_nonstop_filter_passed_20260523_021407.png
+2026-05-23 02:14:07,810 [INFO] Starting scenario: Sort by price
+2026-05-23 02:14:07,811 [INFO] Sorting by Price (Low to High)...
+2026-05-23 02:14:07,857 [INFO] Sorted by Price.
+2026-05-23 02:14:07,923 [INFO] Dismissing results-page popup...
+2026-05-23 02:14:08,816 [INFO] BDD scenario screenshot saved: C:\WiproCapstone\BDD\BDD_ixigo\utils\..\logs\Sort_by_price_passed_20260523_021408.png
+2026-05-23 02:14:08,818 [INFO] Starting scenario: Print results
+2026-05-23 02:14:08,818 [INFO] ============================================================
+2026-05-23 02:14:10,327 [INFO] 60 Flights Available
+2026-05-23 02:14:10,514 [INFO] 
+--- Flight 1 ---
+2026-05-23 02:14:10,514 [INFO]   ₹6,698
+2026-05-23 02:14:10,514 [INFO]   Extra ₹255 Off
+2026-05-23 02:14:10,514 [INFO]   Book
+2026-05-23 02:14:10,514 [INFO] 
+--- Flight 2 ---
+2026-05-23 02:14:10,514 [INFO]   Recommended
+2026-05-23 02:14:10,514 [INFO]   Akasa Air
+2026-05-23 02:14:10,515 [INFO]   QP1825
+2026-05-23 02:14:10,515 [INFO]   17:00
+2026-05-23 02:14:10,515 [INFO]   BOM
+2026-05-23 02:14:10,515 [INFO]   2h 15m
+2026-05-23 02:14:10,515 [INFO]   Non-stop
+2026-05-23 02:14:10,515 [INFO]   19:15
+2026-05-23 02:14:10,515 [INFO] 
+--- Flight 3 ---
+2026-05-23 02:14:10,515 [INFO]   Akasa Air
+2026-05-23 02:14:10,516 [INFO]   QP1120
+2026-05-23 02:14:10,516 [INFO]   19:00
+2026-05-23 02:14:10,516 [INFO]   BOM
+2026-05-23 02:14:10,516 [INFO]   2h 15m
+2026-05-23 02:14:10,516 [INFO]   Non-stop
+2026-05-23 02:14:10,516 [INFO]   21:15
+2026-05-23 02:14:10,516 [INFO]   DEL
+2026-05-23 02:14:10,516 [INFO] 
+--- Flight 4 ---
+2026-05-23 02:14:10,516 [INFO]   Akasa Air
+2026-05-23 02:14:10,517 [INFO]   QP1819
+2026-05-23 02:14:10,517 [INFO]   14:30
+2026-05-23 02:14:10,517 [INFO]   BOM
+2026-05-23 02:14:10,517 [INFO]   2h 20m
+2026-05-23 02:14:10,517 [INFO]   Non-stop
+2026-05-23 02:14:10,517 [INFO]   16:50
+2026-05-23 02:14:10,517 [INFO]   DEL
+2026-05-23 02:14:10,517 [INFO] ============================================================
+2026-05-23 02:14:10,925 [INFO] BDD scenario screenshot saved: C:\WiproCapstone\BDD\BDD_ixigo\utils\..\logs\Print_results_passed_20260523_021410.png
+2026-05-23 02:14:10,927 [INFO] Starting scenario: Click book
+2026-05-23 02:14:10,927 [INFO] Clicking Book on flight #1...
+2026-05-23 02:14:11,100 [INFO] Book clicked — proceeding to traveller details.
+2026-05-23 02:14:12,262 [INFO] BDD scenario screenshot saved: C:\WiproCapstone\BDD\BDD_ixigo\utils\..\logs\Click_book_passed_20260523_021411.png
+2026-05-23 02:14:12,265 [INFO] Starting scenario: Booking page
+2026-05-23 02:14:12,266 [INFO] Waiting for booking/traveller details page...
+2026-05-23 02:14:12,279 [INFO] Booking page loaded.
+2026-05-23 02:14:12,642 [INFO] BDD scenario screenshot saved: C:\WiproCapstone\BDD\BDD_ixigo\utils\..\logs\Booking_page_passed_20260523_021412.png
+2026-05-23 02:14:12,647 [INFO] Starting scenario: Decline cancellation
+2026-05-23 02:14:12,648 [INFO] Selecting 'I don't want Free Cancellation'...
+2026-05-23 02:14:19,877 [INFO] Declined Free Cancellation.
+2026-05-23 02:14:20,245 [INFO] BDD scenario screenshot saved: C:\WiproCapstone\BDD\BDD_ixigo\utils\..\logs\Decline_cancellation_passed_20260523_021420.png
+2026-05-23 02:14:20,247 [INFO] Starting scenario: Fill traveller
+2026-05-23 02:14:20,248 [INFO] Filling traveller form from CSV data...
+2026-05-23 02:14:20,248 [INFO] Deselecting any pre-selected saved travellers...
+2026-05-23 02:14:22,300 [INFO] Expanding traveller form...
+2026-05-23 02:14:26,927 [INFO] Expanded traveller form.
+2026-05-23 02:14:26,928 [INFO] Selecting title: Mr
+2026-05-23 02:14:26,954 [INFO] Found 'Title' via: //*[normalize-space()='Title']/following-sibling::input
+2026-05-23 02:14:27,174 [INFO] Title 'Mr' selected from dropdown.
+2026-05-23 02:14:27,174 [INFO] Filling 'First': Rahul Kumar
+2026-05-23 02:14:27,195 [INFO] Found 'First' via: //*[contains(text(),'First')]/following-sibling::input
+2026-05-23 02:14:27,562 [INFO] Filling 'Last Name': Sharma
+2026-05-23 02:14:27,588 [INFO] Found 'Last Name' via: //*[normalize-space()='Last Name']/following-sibling::input
+2026-05-23 02:14:27,882 [INFO] Filling 'Mobile Number': 9876543210
+2026-05-23 02:14:27,912 [INFO] Found 'Mobile Number' via: //*[normalize-space()='Mobile Number']/following-sibling::input
+2026-05-23 02:14:28,313 [INFO] Filling 'Email': rahul.sharma@example.com
+2026-05-23 02:14:28,337 [INFO] Found 'Email' via: //*[normalize-space()='Email']/following-sibling::input
+2026-05-23 02:14:28,812 [INFO] Found 'Pincode' via: //*[normalize-space()='Pincode']/following-sibling::input
+2026-05-23 02:14:28,812 [INFO] Filling 'Pincode': 560001
+2026-05-23 02:14:28,832 [INFO] Found 'Pincode' via: //*[normalize-space()='Pincode']/following-sibling::input
+2026-05-23 02:14:29,211 [INFO] Found 'Address' via: //*[normalize-space()='Address']/following-sibling::input
+2026-05-23 02:14:29,211 [INFO] Filling 'Address': 42 MG Road Bengaluru
+2026-05-23 02:14:29,231 [INFO] Found 'Address' via: //*[normalize-space()='Address']/following-sibling::input
+2026-05-23 02:14:29,647 [INFO] Traveller form filled successfully (all fields).
+2026-05-23 02:14:29,949 [INFO] BDD scenario screenshot saved: C:\WiproCapstone\BDD\BDD_ixigo\utils\..\logs\Fill_traveller_passed_20260523_021429.png
+2026-05-23 02:14:29,954 [INFO] Starting scenario: Continue and confirm
+2026-05-23 02:14:29,955 [INFO] Clicking Continue...
+2026-05-23 02:14:30,213 [INFO] Continue clicked.
+2026-05-23 02:14:30,213 [INFO] Looking for Confirm button on review dialog...
+2026-05-23 02:14:30,898 [INFO] Confirm clicked.
+2026-05-23 02:14:31,160 [INFO] Checking for upsell popup...
+2026-05-23 02:14:31,815 [INFO] Upsell popup dismissed (No, Thanks).
+2026-05-23 02:14:31,970 [INFO] BDD scenario screenshot saved: C:\WiproCapstone\BDD\BDD_ixigo\utils\..\logs\Continue_and_confirm_passed_20260523_021431.png
+2026-05-23 02:14:31,972 [INFO] Starting scenario: Add-ons page
+2026-05-23 02:14:31,973 [INFO] Waiting for Add-ons page to load...
+2026-05-23 02:14:33,803 [INFO] Add-ons page loaded.
+2026-05-23 02:14:34,338 [INFO] BDD scenario screenshot saved: C:\WiproCapstone\BDD\BDD_ixigo\utils\..\logs\Add-ons_page_passed_20260523_021434.png
+2026-05-23 02:14:34,341 [INFO] Starting scenario: Select seat
+2026-05-23 02:14:34,342 [INFO] Attempting to select a seat...
+2026-05-23 02:14:46,592 [WARNING] Seat map did not load.
+2026-05-23 02:14:46,932 [INFO] BDD scenario screenshot saved: C:\WiproCapstone\BDD\BDD_ixigo\utils\..\logs\Select_seat_passed_20260523_021446.png
+2026-05-23 02:14:46,936 [INFO] Starting scenario: Skip to payment
+2026-05-23 02:14:46,936 [INFO] Clicking Skip to Payment...
+2026-05-23 02:14:49,354 [INFO] Skipped to payment.
+2026-05-23 02:14:49,861 [INFO] BDD scenario screenshot saved: C:\WiproCapstone\BDD\BDD_ixigo\utils\..\logs\Skip_to_payment_passed_20260523_021449.png
+2026-05-23 02:14:49,867 [INFO] Starting scenario: Payment page
+2026-05-23 02:14:49,868 [INFO] Waiting for Payment page...
+2026-05-23 02:14:49,949 [INFO] Payment page reached. URL: https://www.ixigo.com/payments/view/home/1/01KS8PXX5GPRDQQTVN953SWB4H5S8XKXP10?showHeader=true&tripId=IF26052245583460&providerId=1044&productType=FLIGHT&isr=false&juspaySDK=01KS8PXX5GZ78Z802HD1N4Y7C95K0XS18PX
+2026-05-23 02:14:50,390 [INFO] BDD scenario screenshot saved: C:\WiproCapstone\BDD\BDD_ixigo\utils\..\logs\Payment_page_passed_20260523_021450.png
+2026-05-23 02:14:50,400 [INFO] Closing browser after feature: Ixigo full end-to-end booking
+2026-05-23 02:14:52,897 [INFO] BDD suite finished.
+2026-05-23 02:14:52,900 [INFO] Reports will open shortly. HTML works without extra tools; Allure opens when Allure commandline is installed. Logs: C:\WiproCapstone\BDD\BDD_ixigo\reports\allure-command-*.log
